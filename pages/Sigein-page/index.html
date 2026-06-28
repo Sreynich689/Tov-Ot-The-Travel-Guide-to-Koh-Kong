@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Back Button -->
+    <button class="back-btn">
+        <i class="bi bi-arrow-left"></i>
+    </button>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Sign in</h1>
+
+        <p>
+            New user?
+            <a href="#">Create an account</a>
+        </p>
+    </div>
+
+    <!-- Login Form -->
+    <form id="loginForm">
+
+        <div class="input-box">
+            <i class="bi bi-envelope"></i>
+
+            <input
+                type="email"
+                placeholder="Email Address"
+                required>
+        </div>
+
+        <div class="input-box">
+            <i class="bi bi-telephone"></i>
+
+            <input
+                type="tel"
+                placeholder="Phone Number"
+                required>
+        </div>
+
+        <div class="input-box">
+
+            <i class="bi bi-key"></i>
+
+            <input
+                id="password"
+                type="password"
+                placeholder="Password"
+                required>
+
+            <i id="togglePassword" class="bi bi-eye"></i>
+
+        </div>
+
+        <a href="#" class="forgot">
+            Forgot password?
+        </a>
+
+        <button class="login-btn">
+            Login
+        </button>
+
+    </form>
+
+    <div class="divider">
+        <span>or</span>
+    </div>
+
+    <div class="social">
+
+        <button>
+            <i class="bi bi-facebook facebook"></i>
+        </button>
+
+        <button>
+            <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png">
+        </button>
+
+        <button>
+            <i class="bi bi-apple apple"></i>
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

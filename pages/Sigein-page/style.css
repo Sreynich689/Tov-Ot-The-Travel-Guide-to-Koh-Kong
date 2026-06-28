@@ -1,0 +1,344 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    font-family:"Space Grotesk",sans-serif;
+
+    background:#F7F8FC;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+
+    font-family:"Clash Display",sans-serif;
+
+    color:#111;
+}
+
+h1{
+    font-size:61px;
+    font-weight:600;
+}
+
+h2{
+    font-size:49px;
+    font-weight:600;
+}
+
+h3{
+    font-size:39px;
+    font-weight:600;
+}
+
+h4{
+    font-size:31px;
+    font-weight:600;
+}
+
+.subtitle-1{
+
+    font-family:"Clash Display",sans-serif;
+
+    font-size:25px;
+    font-weight:500;
+}
+
+.subtitle-2{
+
+    font-family:"Clash Display",sans-serif;
+
+    font-size:20px;
+    font-weight:500;
+}
+
+.body-1{
+
+    font-size:16px;
+    font-weight:400;
+}
+
+.caption-1{
+
+    font-size:13px;
+    font-weight:400;
+}
+
+.caption-2{
+
+    font-size:10px;
+    font-weight:300;
+}
+
+
+.container{
+
+    width:390px;
+
+    background:#FFF;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.back-btn{
+
+    width:42px;
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#4285F4;
+
+    color:#FFF;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    margin-bottom:70px;
+}
+
+.header h1{
+
+    /* Typography H4 */
+
+    font-size:31px;
+    font-weight:600;
+
+    margin-bottom:5px;
+}
+
+.header p{
+
+    font-size:16px;
+    font-weight:400;
+
+    color:#444;
+
+    margin-bottom:35px;
+}
+
+.header a{
+
+    text-decoration:none;
+
+    color:#111;
+
+    font-size:16px;
+
+    font-weight:600;
+}
+
+
+.input-box{
+
+    display:flex;
+
+    align-items:center;
+
+    background:#EDEDED;
+
+    border-radius:10px;
+
+    padding:0 15px;
+
+    margin-bottom:16px;
+}
+
+.input-box input{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    padding:16px 10px;
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-size:13px;
+
+    color:#111;
+}
+
+.input-box input::placeholder{
+
+    color:#999;
+}
+
+.input-box i{
+
+    color:#666;
+
+    font-size:18px;
+}
+
+#togglePassword{
+
+    cursor:pointer;
+}
+
+
+.forgot{
+
+    display:inline-block;
+
+    margin:5px 0 35px;
+
+    color:#222;
+
+    font-size:13px;
+    
+
+    font-weight:600;
+}
+
+.login-btn{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:35px;
+
+    background:#4285F4;
+
+    color:#FFF;
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-size:20px;
+
+    font-weight:500;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.login-btn:hover{
+
+    background:#2E6DD8;
+}
+
+
+.divider{
+
+    display:flex;
+
+    align-items:center;
+
+    margin:45px 0;
+}
+
+.divider::before,
+.divider::after{
+
+    content:"";
+
+    flex:1;
+
+    height:1px;
+
+    background:#AAA;
+}
+
+.divider span{
+
+    padding:0 15px;
+
+    font-size:13px;
+
+    color:#777;
+}
+
+
+.social{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:16px;
+}
+
+.social button{
+
+    width:48px;
+    height:48px;
+
+    border:none;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:8px;
+
+    background:#EFEFEF;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.social button:hover{
+
+    transform:translateY(-4px);
+}
+
+.social img{
+
+    width:22px;
+}
+
+.facebook{
+
+    color:#1877F2;
+    font-size:28px;
+}
+
+.apple{
+
+    color:#000;
+
+    font-size:26px;
+}
+
+
+@media (max-width:420px){
+
+    .container{
+
+        width:100%;
+
+        min-height:100vh;
+
+        border-radius:0;
+
+        box-shadow:none;
+    }
+}
