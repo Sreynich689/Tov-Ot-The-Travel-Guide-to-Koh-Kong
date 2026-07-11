@@ -1,0 +1,213 @@
+/*Hero Section*/
+.discover-hero {
+    height: 100vh;
+    background: url("../../assets/images/homepic/banner1.png") center center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.discover-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.discoverhero-text {
+    max-width: 700px;
+    background: rgba(59, 130, 246, 0.35);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/*Getting there*/
+.getting-card {
+    background: #3B82F6;
+    color: #fff;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    margin: 50px auto;
+}
+
+.getting-card h2 {
+    margin-bottom: 20px;
+}
+
+.getting-card p {
+    margin-bottom: 0;
+    line-height: 1.8;
+}
+
+/* Card*/
+.card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-family: "Clash Display", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.card-text {
+    font-family: "Space Grotesk", sans-serif;
+    color: #666;
+    line-height: 1.6;
+}
+.card-wrapper{
+    width:100%;
+    overflow-x:auto;
+    overflow-y:hidden;
+    padding-bottom:15px;
+    scroll-behavior:smooth;
+}
+
+.card-wrapper::-webkit-scrollbar{
+    display:none;
+}
+
+.card-container{
+    display:flex;
+    gap:25px;
+    width:max-content;
+}
+
+.quote-section{
+    background:#eef4ff;
+    height:140px;
+    color:#4f86ff;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding-top: 5px;
+}
+.title-section{
+    background:#4f86ff;
+    height:140px;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+/*Responsive*/
+@media (max-width: 992px) {
+
+    .discover-hero {
+        height: 70vh;
+    }
+
+    .discoverhero-text {
+        max-width: 100%;
+        margin-top: 0;
+        padding: 25px;
+    }
+
+    .hero-content h1 {
+        font-size: 46px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .discover-hero {
+        height: 60vh;
+    }
+
+    .discoverhero-text {
+        padding: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .getting-card {
+        padding: 25px;
+    }
+
+    .travel-tips {
+        padding: 30px 15px;
+    }
+
+    .travel-tips h4 {
+        font-size: 22px;
+    }
+
+    .travel-tips p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 768px){
+
+    .card-wrapper{
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .card-container{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 15px;
+        width: max-content;
+    }
+
+    .card{
+        min-width: 280px;
+        flex-shrink: 0;
+    }
+
+}
