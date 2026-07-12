@@ -1,0 +1,204 @@
+body{
+    font-family:"Space Grotesk",sans-serif;
+    background:#f8fbff;
+    color:#333;
+}
+
+h1,h2,h3,h4,h5{
+    font-family:"Clash Display",sans-serif;
+    font-weight:700;
+}
+
+.review-left h1{
+    font-size:52px;
+    line-height:1.2;
+    margin-bottom:40px;
+}
+.travel-btn.active{
+    background:#3B82F6;
+    color:#fff;
+    border-color:#3B82F6;
+}
+
+.place-card{
+    background:#fff;
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.place-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.place-card .card-body{
+    padding:20px;
+}
+
+.place-card h5{
+    margin-bottom:8px;
+}
+
+.place-card p{
+    color:#777;
+    margin:0;
+}
+
+.review-form{
+    background:#fff;
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+/* Labels */
+
+.review-form label{
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+/* Inputs */
+
+.form-control,
+.form-select{
+    border-radius:12px;
+    padding:12px;
+    border:1px solid #d8d8d8;
+    transition:.3s;
+}
+
+.form-control:focus,
+.form-select:focus{
+    border-color:#3B82F6;
+    box-shadow:0 0 0 .2rem rgba(59,130,246,.2);
+}
+
+.star-rating{
+    display:flex;
+    gap:10px;
+    font-size:34px;
+    color:#d4d4d4;
+    cursor:pointer;
+}
+
+.star-rating i{
+    transition:.2s;
+}
+
+.star-rating i:hover,
+.star-rating i.active{
+    color:#FFC107;
+}
+
+.visit-group{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.visit-group .btn{
+    border-radius:30px;
+}
+
+.upload-box{
+    border:2px dashed #b8c5d6;
+    border-radius:18px;
+    padding:45px;
+    text-align:center;
+    color:#777;
+    transition:.3s;
+}
+
+.upload-box:hover{
+    border-color:#3B82F6;
+    background:#eef5ff;
+}
+
+.upload-box i{
+    font-size:45px;
+    color:#3B82F6;
+    margin-bottom:15px;
+}
+
+.submit-btn{
+    width:100%;
+    background:#3B82F6;
+    border:none;
+    color:#fff;
+    padding:14px;
+    border-radius:40px;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.submit-btn:hover{
+    background:#2563EB;
+}
+
+.vertical-line{
+    border-left:1px solid #e5e5e5;
+    height:100%;
+}
+
+/*Responsive*/
+@media (max-width:992px){
+
+    .review-left{
+        margin-bottom:40px;
+    }
+
+    .review-left h1{
+        font-size:40px;
+    }
+
+    .vertical-line{
+        display:none;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .review-left h1{
+        font-size:34px;
+        text-align:center;
+    }
+
+    .review-form{
+        padding:25px;
+    }
+
+    .star-rating{
+        justify-content:center;
+    }
+
+}
+
+@media (max-width:576px){
+
+    .review-left h1{
+        font-size:28px;
+    }
+
+    .place-card img{
+        height:200px;
+    }
+
+    .review-form{
+        padding:20px;
+    }
+
+    .upload-box{
+        padding:25px;
+    }
+
+    .submit-btn{
+        width:100%;
+    }
+
+}
