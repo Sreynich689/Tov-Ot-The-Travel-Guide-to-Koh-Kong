@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tov Ot | Discover</title>
+
+    <link rel="icon" type="image/png" href="../../assets/images/homepic/logo.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="../home-page/style.css">
+    <link rel="stylesheet" href="../discover-page/discover.css">
+
+    <!-- Fonts -->
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=space-grotesk@300,400,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
+    <div class="container">
+
+        <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+            <img src="../../assets/images/homepic/icon.png" alt="TOV OT Logo" class="logo me-2">
+            <span class="text-white">Tov Ot</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+            <ul class="navbar-nav gap-lg-3">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../home-page/index.html">Home</a>
+                </li>
+
+                <!-- Discover -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Discover
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="discover.html#destination">
+                            <i class="bi bi-geo-alt-fill"></i> Destination
+                        </a></li>
+
+                        <li><a class="dropdown-item" href="discover.html#activities">
+                            <i class="bi bi-compass-fill"></i> Activities
+                        </a></li>
+                    </ul>
+                </li>
+
+                <!-- Plan Trip -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Plan Trip
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="plantrip.html#booking">
+                            <i class="bi bi-calendar-check"></i> Booking
+                        </a></li>
+
+                        <li><a class="dropdown-item" href="plantrip.html#budget">
+                            <i class="bi bi-wallet2"></i> Budget Plan
+                        </a></li>
+
+                        <li><a class="dropdown-item" href="plantrip.html#payment">
+                            <i class="bi bi-credit-card"></i> Payment
+                        </a></li>
+                    </ul>
+                </li>
+
+                <!-- Review -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Review
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="review.html#testimonial">
+                            <i class="bi bi-chat-square-heart"></i> Testimonial
+                        </a></li>
+
+                        <li><a class="dropdown-item" href="review.html#write-review">
+                            <i class="bi bi-pencil-square"></i> Write Your Review
+                        </a></li>
+
+                        <li><a class="dropdown-item" href="review.html#add-place">
+                            <i class="bi bi-plus-circle"></i> Add a Place
+                        </a></li>
+                    </ul>
+                </li>
+
+                <!-- About -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        About Us
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="about.html#description">
+                            <i class="bi bi-info-circle"></i> Description
+                        </a></li>
+
+                        <li><a class="dropdown-item" href="about.html#contact">
+                            <i class="bi bi-envelope"></i> Contact
+                        </a></li>
+                    </ul>
+                </li>
+
+                <!--Sing in-->
+                <li class="nav-item">
+                    <a class="nav-link" style="background-color: blue;" href="../Sigein-page/index.html">
+                        Sign in
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<main>
+
+<!-- Hero -->
+<section class="discover-hero">
+    <div class="container">
+        <div class="hero-content discoverhero-text">
+            <h1>Discover Koh Kong</h1>
+            <p>
+                Explore hidden beaches, beautiful islands,
+                waterfalls and amazing adventures.
+                Where the jungle meets the sea
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Getting there -->
+<section class="container py-2">
+    <div class="getting-card">
+        <h2>Getting There</h2>
+
+        <h6 class="fw-bold">How to get there</h6>
+        <p>
+            You can reach it by bus, taxi, or boat. Bus ticket prices vary depending on
+            companies and routes, but on average expect to pay between 10 and 20 USD
+            for a Phnom Penh–Koh Kong trip.
+        </p>
+
+        <h6 class="fw-bold">Best time to visit</h6>
+        <p>
+            The best time to visit Koh Kong is from November to April, during the dry season.
+        </p>
+    </div>
+</section>
+
+<!-- Hidden treasures -->
+<section id="destination" class="container py-5">
+
+    <div class="d-flex justify-content-between mb-4">
+        <h2>Hidden Treasures</h2>
+    </div>
+    <div>
+        <h6 class="mb-4" style="color: gray;">From cascading waterfalls to untouched islands</h6>
+    </div>
+    <div class="card-wrapper">
+        <div class="card-container">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top rounded-4" src="../../assets/images/homepic/island.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">KohKong Island</h5>
+                    <p class="card-text">Cambodia's largest island, a white-sand beach paradise</p>
+                    <a href="#" class="btn btn-primary">Explore More</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top rounded-4" src="../../assets/images/homepic/kohsdach.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Koh Sdach</h5>
+                    <p class="card-text">Explore fishing, snorkelling, diving, and fresh seafood</p>
+                    <a href="#" class="btn btn-primary">Explore More</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top rounded-4" src="../../assets/images/homepic/osoam.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Osoam Community</h5>
+                    <p class="card-text">See wild crocodiles and explore the mountain village</p>
+                    <a href="#" class="btn btn-primary">Explore More</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top rounded-4" src="../../assets/images/homepic/chiphat.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Chi Phat</h5>
+                    <p class="card-text">Eco-tourism village, deep in the rainforest</p>
+                    <a href="#" class="btn btn-primary">Explore More</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top rounded-4" src="../../assets/images/homepic/pkongkang.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Prek KongKang</h5>
+                    <p class="card-text">Peaceful riverside village with local fishing life.</p>
+                    <a href="#" class="btn btn-primary">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Travel tip -->
+<section>
+    <div class="container my-4">
+        <div class="quote-section mb-3">
+            <h3>
+                “The real Cambodia begins where the road ends.”
+            </h3>
+            <p>- Local Proverb</p>
+        </div>
+        <div class="title-section">
+            <h2>Top Things to Do in Koh Rong</h2>
+        </div>
+    </div>
+</section>
+
+<!-- Activities -->
+<section id="activities" class="container py-5">
+
+    <div class="d-flex justify-content-between mb-4">
+        <h2>Activities</h2>
+    </div>
+    <div class="card-wrapper">
+        <div class="card-container">
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top rounded-4" src="../../assets/images/homepic/tatai.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Tatai Waterfall</h5>
+                    <p class="card-text">A beautiful jungle waterfall on the edge fo the Cardamom</p>
+                    <a href="../review-page/review.html" class="btn btn-primary">Explore More</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top rounded-4" src="../../assets/images/homepic/kaiyaking.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Kayaking Tatai River</h5>
+                    <p class="card-text">Cambodia's largest island, still wild</p>
+                    <a href="#" class="btn btn-primary">Explore More</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top rounded-4" src="../../assets/images/homepic/fireflies.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Fireflies sightseeing</h5>
+                    <p class="card-text">A jungle cascade on the edge of the Cardmoms</p>
+                    <a href="#" class="btn btn-primary">Explore More</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top rounded-4" src="../../assets/images/homepic/krasop.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Explore Peam Krasop</h5>
+                    <p class="card-text">Mangrove sanctuary teeming with life</p>
+                    <a href="#" class="btn btn-primary">Explore More</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top rounded-4" src="../../assets/images/homepic/snerbeach.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Sner Beach Picnic</h5>
+                    <p class="card-text">Mangrove sanctuary teeming with life</p>
+                    <a href="#" class="btn btn-primary">Explore More</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top rounded-4" src="../../assets/images/homepic/sunset.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Riverfront Sunset</h5>
+                    <p class="card-text">Eco-tourism deep in the rainforest</p>
+                    <a href="#" class="btn btn-primary">Explore More</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top rounded-4" src="../../assets/images/homepic/phumneasat.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Visit Phum Neasat</h5>
+                    <p class="card-text">Explore the village and buy fresh seafood from boats</p>
+                    <a href="#" class="btn btn-primary">Explore More</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top rounded-4" src="../../assets/images/homepic/nightmarket.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Night Market Walk</h5>
+                    <p class="card-text">Explore authentic street-food and local night life</p>
+                    <a href="#" class="btn btn-primary">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Place to Stay-->
+<section id="destination" class="container py-5">
+
+    <div class="d-flex justify-content-between mb-4">
+        <h2>Place to Stay</h2>
+    </div>
+    <div class="card-wrapper">
+        <div class="card-container">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top rounded-4" src="../../assets/images/homepic/youngwild.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">YOUNG wild & free</h5>
+                    <p class="card-text">#3 Best Value of 77 places to stay in Koh Kong</p>
+                    <a href="../review-page/review.html" class="btn btn-primary">Check Availability</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top rounded-4" src="../../assets/images/homepic/99-guesthouse.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">99 Guesthouse</h5>
+                    <p class="card-text">#6 Best Value of 77 places to stay in Koh Kong</p>
+                    <a href="#" class="btn btn-primary">Check Availability</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top rounded-4" src="../../assets/images/homepic/ss-villa-resot.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">SS Villa & Resort</h5>
+                    <p class="card-text">#1 Best Value of 77 places to stay in Koh Kong</p>
+                    <a href="#" class="btn btn-primary">Check Availability</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top rounded-4" src="../../assets/images/homepic/nov-kohkong.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Nov Koh Kong Resort</h5>
+                    <p class="card-text">#1 of 2 Hotels in Krong Khamera Phoumin(5 reviews)</p>
+                    <a href="#" class="btn btn-primary">Check Availability</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top rounded-4" src="../../assets/images/homepic/kohsdachresort.avif" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Koh Sdach Resort By EMH</h5>
+                    <p class="card-text">#3 12+ reviews</p>
+                    <a href="#" class="btn btn-primary">Check Availability</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Food to Eat-->
+<section id="destination" class="container py-5">
+
+    <div class="d-flex justify-content-between mb-4">
+        <h2>Food To Eat</h2>
+    </div>
+    <div class="card-wrapper">
+        <div class="card-container">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top rounded-4" src="../../assets/images/homepic/crabsnack.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Crab Snack</h5>
+                    <p class="card-text">Seafood, Asian</p><br>
+                    <a href="#" class="btn btn-primary">Explore More</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top rounded-4" src="../../assets/images/homepic/anon-coffee&resterant.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Anon Coffee & Restaurant</h5>
+                    <p class="card-text">Chinese, bar</p>
+                    <a href="#" class="btn btn-primary">Explore More</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top rounded-4" src="../../assets/images/homepic/mangrovesanctuaryresort.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Mangrove Sanctuary Resort</h5>
+                    <p class="card-text">30+ reviews</p>
+                    <a href="#" class="btn btn-primary">Explore More</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top rounded-4" src="../../assets/images/homepic/kohyorbeachbar.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Koh Yor Beach Bar</h5>
+                    <p class="card-text">9 of 15 restaurants in Koh Kong</p><br>
+                    <a href="#" class="btn btn-primary">Explore More</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top rounded-4" src="../../assets/images/homepic/andatrormseafoodresstaurant.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Andart Rorm Seafood Restaurant</h5>
+                    <p class="card-text">Koh Kong Shrimps</p>
+                    <a href="#" class="btn btn-primary">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="footer pt-5 pb-3">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h4 class="fw-bold text-white">
+                    <img src="../../assets/images/homepic/icon.png" alt="TOV OT Logo" class="logo me-2">
+                    <span class="text-white">Tov Ot</span>
+                </h4>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="fw-bold text-white mb-3">Quick Links</h5>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="plantrip.html">Plan Trip</a></li>
+                    <li><a href="review.html">Review</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-12 mb-4">
+                <h5 class="fw-bold text-white mb-3">Contact Us</h5>
+
+                <div class="d-flex align-items-center mb-3">
+                    <i class="bi bi-telephone-fill me-2"></i>
+                    <span>+855 12 345 678</span>
+                </div>
+
+                <div class="d-flex align-items-center mb-3">
+                    <i class="bi bi-envelope-fill me-2"></i>
+                    <span>info@tovot.com</span>
+                </div>
+
+                <div class="d-flex align-items-center mb-3">
+                    <i class="bi bi-geo-alt-fill me-2"></i>
+                    <span>Koh Kong, Cambodia</span>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="border-light">
+
+        <div class="text-center text-light">
+            <p class="mb-1">© 2026 TOV OT | All Rights Reserved</p>
+            <small>Designed & Developed by TOV OT Team</small>
+        </div>
+
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
