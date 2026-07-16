@@ -1,0 +1,88 @@
+/* ===========================
+BASE & OVERRIDES
+=========================== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff !important; 
+}
+
+.text-brand { color: #4285F4 !important; }
+.btn-brand { background-color: #4285F4; color: white; }
+.btn-brand:hover { background-color: #2b6bd8; color: white; }
+.text-primary { color: #0d6efd !important; }
+
+.cursor-pointer { cursor: pointer; }
+.transition-transform { transition: transform 0.3s ease; }
+
+/* ===========================
+COUPON BEHAVIOR
+=========================== */
+.coupon-box {
+    border-radius: 6px;
+}
+
+.coupon-box:hover {
+    border-color: #b0b0b0 !important;
+}
+
+.coupon-input-area {
+    display: none; /* Handled by JS */
+}
+
+.coupon-input-area.active {
+    display: flex;
+}
+
+/* ===========================
+PAYMENT METHOD UI
+=========================== */
+.payment-method-row {
+    transition: opacity 0.2s ease;
+    margin-bottom: 5px;
+}
+
+/* Bank Logos */
+.method-logo {
+    width: 70px;
+    height: 70px;
+}
+.aba-logo { background-color: #003a5c; color: #fff; font-weight: 600; font-family: sans-serif; letter-spacing: 1px;}
+.acleda-logo { background-color: #1a3c63; }
+.card-logo { background: #f0f0f0; } /* Placeholder for the card graphic */
+.wing-logo { background-color: #a4ce3a; }
+
+/* Custom Radio Buttons */
+.custom-radio {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #666;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.2s;
+}
+
+/* The image shows unselected states for all radios, but if selected, it will look like this */
+input[type="radio"]:checked + .custom-radio {
+    border-color: #111;
+}
+
+input[type="radio"]:checked + .custom-radio::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background-color: #111;
+    border-radius: 50%;
+}
+
+/* ===========================
+RIGHT CARD OVERRIDES
+=========================== */
+/* This matches the thick blue border in the new image */
+.summary-card-blue {
+    border: 3px solid #1a73e8 !important; /* Adjust shade of blue if needed */
+    overflow: hidden; /* Keeps the grey footer inside the rounded corners */
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tov Ot | Payment</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-dark">
+
+    <header class="py-4 mb-3">
+        <div class="container">
+            <a href="../../index.html" class="text-decoration-none d-flex align-items-center gap-2">
+    <link rel="icon" type="image/png" href="../../assets/images/homepic/logo.png">
+                <img src="../../assets/images/homepic/logo.png" alt="Tov Ot Logo" class="logo me-2" width="40" height="40">
+                <span class="fs-4 fw-bold text-brand">Tov Ot</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="container pb-5">
+        <div class="row g-4 justify-content-between">
+            
+            <div class="col-lg-7">
+                
+                <div class="d-flex justify-content-between px-1 mb-4 text-secondary" style="font-size: 11px;">
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="bi bi-shield-check fs-6"></i>
+                        <span class="fw-medium">Secure Payment</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="bi bi-slash-circle fs-6"></i>
+                        <span class="fw-medium">Non-refundable</span>
+                    </div>
+                </div>
+
+                <div class="card border-light-subtle mb-4 coupon-box" id="couponToggle">
+                    <div class="card-body p-4 d-flex justify-content-between align-items-center cursor-pointer">
+                        <div class="d-flex align-items-center gap-3 text-secondary" style="font-size: 13px;">
+                            <i class="bi bi-ticket-perforated fs-5"></i>
+                            <span>Have a coupon code</span>
+                        </div>
+                        <i class="bi bi-chevron-down toggle-icon transition-transform"></i>
+                    </div>
+                </div>
+                
+                <div class="coupon-input-area mb-4 gap-2" id="couponInputArea">
+                    <input type="text" class="form-control form-control-sm p-2" placeholder="Enter coupon code">
+                    <button class="btn btn-dark btn-sm px-4">Apply</button>
+                </div>
+
+                <div class="card border-light-subtle p-4 pb-5 rounded-3 shadow-sm">
+                    <div class="d-flex align-items-center gap-3 mb-5">
+                        <div class="step-circle bg-secondary bg-opacity-25 text-dark rounded-circle d-flex justify-content-center align-items-center fw-bold fs-5" style="width: 40px; height: 40px;">3</div>
+                        <h2 class="h3 mb-0 fw-bold">Pay Via</h2>
+                    </div>
+
+                    <div class="d-flex flex-column gap-4 ms-md-5 me-md-3">
+                        
+                        <label class="d-flex justify-content-between align-items-center cursor-pointer payment-method-row">
+                            <div class="d-flex align-items-center gap-4">
+                                <div class="method-logo aba-logo rounded d-flex justify-content-center align-items-center">
+                                    <img src="../../assets/images/bank/aba.png" class="img-fluid rounded" alt="Card">
+                            </div>
+                                <span class="fw-bold fs-5">ABA PAY</span>
+                            </div>
+                            <input type="radio" name="payment_method" value="aba" class="d-none">
+                            <span class="custom-radio"></span>
+                        </label>
+
+                        <label class="d-flex justify-content-between align-items-center cursor-pointer payment-method-row">
+                            <div class="d-flex align-items-center gap-4">
+                                <div class="method-logo acleda-logo rounded d-flex justify-content-center align-items-center">
+                                    <img src="../../assets/images/bank/aceleda.png" class="img-fluid rounded" alt="Card">
+                                </div>
+                                <span class="fw-bold fs-5">ACLEDA PAY</span>
+                            </div>
+                            <input type="radio" name="payment_method" value="acleda" class="d-none">
+                            
+                            <span class="custom-radio"></span>
+                        </label>
+
+                        <label class="d-flex justify-content-between align-items-center cursor-pointer payment-method-row">
+                            <div class="d-flex align-items-center gap-4">
+                                <div class="method-logo card-logo rounded d-flex justify-content-center align-items-center">
+                                    <img src="../../assets/images/bank/credit-card.png" class="img-fluid rounded" alt="Card">
+                                </div>
+                                <span class="fw-bold fs-5">Credit / Debit Card</span>
+                            </div>
+                            <input type="radio" name="payment_method" value="card" class="d-none">
+                            <span class="custom-radio"></span>
+                        </label>
+
+                        <label class="d-flex justify-content-between align-items-center cursor-pointer payment-method-row">
+                            <div class="d-flex align-items-center gap-4">
+                                <div class="method-logo wing-logo rounded d-flex justify-content-center align-items-center ">
+                                    <img src="../../assets/images/bank/wing.png" class="img-fluid rounded" alt="Card">
+                                </div>
+                                <span class="fw-bold fs-5">WingBank</span>
+                            </div>
+                            <input type="radio" name="payment_method" value="wing" class="d-none">
+                            <span class="custom-radio"></span>
+                        </label>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <aside class="col-lg-5">
+                <div class="card summary-card-blue rounded-3">
+                    <div class="card-body p-4 pb-0">
+                        
+                        <div class="d-flex justify-content-between gap-3 mb-2">
+                            <div class="pe-2">
+                                <h3 class="fs-6 fw-bold mb-2 lh-base">Exploring Tatai waterfall Full-Day Tour from Koh Kong</h3>
+                                <div class="text-brand fs-6 mb-2 d-flex align-items-center gap-1">
+                                    <span class="fw-bold me-1 text-primary" style="font-size: 11px;">5.0</span>
+                                    <i class="bi bi-star-fill text-primary" style="font-size: 13px;"></i>
+                                    <i class="bi bi-star-fill text-primary" style="font-size: 13px;"></i>
+                                    <i class="bi bi-star-fill text-primary" style="font-size: 13px;"></i>
+                                    <i class="bi bi-star-fill text-primary" style="font-size: 13px;"></i>
+                                    <i class="bi bi-star-fill text-primary" style="font-size: 13px;"></i>
+                                </div>
+                                <small class="text-muted" style="font-size: 10px;">By <strong class="text-dark text-decoration-underline">Srey Neang Travel Tour</strong></small>
+                            </div>
+                            <img src="../../assets/images/homepic/waterfall.png" alt="Tour" class="rounded object-fit-cover" width="168" height="109">
+                        </div>
+
+                        <hr class="text-secondary opacity-25 mt-4 mb-3">
+
+                        <div class="d-flex flex-column gap-2 text-secondary mb-3" style="font-size: 11px;">
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="bi bi-ticket-detailed fs-6"></i> <span>Tatai Tour Koh Kong</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="bi bi-calendar-event fs-6"></i> <span>Sunday, July 5, 2026</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="bi bi-people-fill fs-6"></i> <span>2 adults</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 mt-4">
+                            <a href="#" class="text-dark fw-bold text-decoration-underline d-block mb-2" style="font-size: 11px;">Change</a>
+                            <hr class="text-secondary opacity-25 my-2">
+                            <div class="d-flex align-items-center gap-2 text-secondary mt-3 ms-2" style="font-size: 11px;">
+                                <i class="bi bi-slash-circle bg-secondary bg-opacity-25 rounded-circle p-1"></i> <span>Non-refundable</span>
+                            </div>
+                            <hr class="text-secondary opacity-25 mt-3 mb-2">
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="fw-bold text-dark d-block mb-2" style="font-size: 11px;">Promo code</label>
+                            <div class="d-flex gap-2">
+                                <input type="text" id="promoCode" class="form-control form-control-sm rounded-pill px-3 py-2" placeholder="Enter promo code" style="font-size: 12px; border-color: #ccc;">
+                                <button id="applyPromo" class="btn btn-outline-dark btn-sm rounded-pill px-4 fw-medium" style="font-size: 12px;">Apply</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer bg-secondary bg-opacity-10 border-0 p-3 px-4 d-flex justify-content-between align-items-center">
+                        <span class="fw-bold fs-6">Total</span>
+                        <strong class="fs-6 fw-bold">$185.00</strong>
+                    </div>
+
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.css"></script>
+    <script src="script.js"></script>
+</body>
+</html>

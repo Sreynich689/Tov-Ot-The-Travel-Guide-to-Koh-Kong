@@ -1,0 +1,407 @@
+/* ==========================================================================
+   AUTHENTICATION STYLES (Merged from signin, signup, forget-password, etc.)
+   ========================================================================== */
+
+/* General Reset & Layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.auth-body {
+    font-family: "Space Grotesk", sans-serif;
+    background: #F7F8FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* For Forget Password, Reset, Verification Pages */
+body.auth-bg-alt {
+    background-color: #EBF3FE;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Sign-In & Sign-Up Container */
+.auth-container {
+    width: 390px;
+    background: #FFF;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+@media (max-width: 420px) {
+    .auth-container {
+        width: 100%;
+        min-height: 100vh;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
+
+/* Buttons & Navigation */
+.back-btn {
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: #4285F4;
+    color: #FFF;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #2E6DD8;
+}
+
+/* Typography styles inside Auth Forms */
+.header h1 {
+    font-size: 31px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #444;
+    margin-bottom: 35px;
+}
+
+.header a {
+    text-decoration: none;
+    color: #111;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Input Boxes for Sign-in / Sign-up */
+.input-box {
+    display: flex;
+    align-items: center;
+    background: #EDEDED;
+    border-radius: 10px;
+    padding: 0 15px;
+    margin-bottom: 16px;
+}
+
+.input-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 16px 10px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 13px;
+    color: #111;
+}
+
+.input-box input::placeholder {
+    color: #999;
+}
+
+.input-box i {
+    color: #666;
+    font-size: 18px;
+}
+
+#togglePassword {
+    cursor: pointer;
+}
+
+.forgot {
+    display: inline-block;
+    margin: 5px 0 35px;
+    color: #222;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Form Buttons */
+.login-btn {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 35px;
+    background: #4285F4;
+    color: #FFF;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.login-btn:hover {
+    background: #2E6DD8;
+}
+
+/* Divider & Social Sign-In */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 45px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #AAA;
+}
+
+.divider span {
+    padding: 0 15px;
+    font-size: 13px;
+    color: #777;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.social button {
+    width: 48px;
+    height: 48px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #EFEFEF;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.social button:hover {
+    transform: translateY(-4px);
+}
+
+.social img {
+    width: 22px;
+}
+
+.facebook {
+    color: #1877F2;
+    font-size: 28px;
+}
+
+.apple {
+    color: #000;
+    font-size: 26px;
+}
+
+/* ==========================================
+   Alternative Card Forms (Forget Pwd, OTP, Reset)
+   ========================================== */
+.card {
+    border: none;
+    border-radius: 24px;
+    box-shadow: 0 4px 24px rgba(222, 198, 198, 0.06);
+}
+
+.heading {
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 600;
+    font-size: 49px;
+    color: #000000;
+    line-height: 1.5;
+}
+
+.subtext {
+    font-size: 16px;
+    font-weight: 400;
+    color: #5E6470;
+    line-height: 1.5;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 14px;
+    font-size: 14px;
+    color: #888A8B;
+}
+
+.field-input {
+    background-color: #E2E4E5;
+    border: none;
+    border-radius: 8px;
+    padding: 13px 40px 13px 36px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px;
+    color: #888A8B;
+    outline: none;
+    width: 100%;
+}
+
+.field-input::placeholder {
+    color: #888A8B;
+}
+
+.field-input:focus {
+    outline: 1.5px solid #3B82F6;
+}
+
+.eye-btn {
+    position: absolute;
+    right: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #888A8B;
+    padding: 0;
+}
+
+/* OTP Verification Code Inputs */
+.otp-input {
+    width: 72px;
+    height: 72px;
+    background-color: #E2E4E5;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    outline: none;
+}
+
+.otp-input:focus {
+    outline: 2px solid #3B82F6;
+    background-color: #F8FAFC;
+}
+
+.rules {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px;
+    color: #5E6470;
+    line-height: 1.5;
+}
+
+.submit-btn {
+    width: 100%;
+    border: none;
+    background: #3B82F6;
+    color: #F8FAFC;
+    padding: 15px;
+    border-radius: 30px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .3s;
+}
+
+.submit-btn:hover {
+    background: #2563EB;
+}
+
+@media (max-width: 576px) {
+    .heading {
+        font-size: 31px;
+    }
+
+    .otp-input {
+        width: 56px;
+        height: 56px;
+        font-size: 20px;
+    }
+}
+
+/* Sign-Up Page specific classes */
+.signup-container {
+    width: 390px;
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+.input-group-custom {
+    display: flex;
+    align-items: center;
+    background: #F1F2F4;
+    border-radius: 10px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+.input-group-custom input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 15px 10px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 13px;
+    color: #111;
+}
+.input-group-custom input::placeholder {
+    color: #999;
+}
+.input-group-custom i {
+    color: #999;
+    font-size: 18px;
+}
+.signup-btn {
+    width: 100%;
+    border: none;
+    background: #3B82F6;
+    color: #fff;
+    padding: 15px;
+    border-radius: 30px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .3s;
+}
+.signup-btn:hover {
+    background: #2563EB;
+}
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.social-btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 12px;
+    background: #F5F5F5;
+    cursor: pointer;
+    transition: .3s;
+}
+.social-btn:hover {
+    transform: translateY(-3px);
+}
+.social-btn i {
+    font-size: 24px;
+}
+.social-btn img {
+    width: 24px;
+}
+
