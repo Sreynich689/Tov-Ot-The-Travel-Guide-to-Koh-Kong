@@ -70,7 +70,7 @@ continueBtn.addEventListener("click", function(){
 
     alert("Booking information completed successfully!");
     // Redirect to payment page
-    // window.location.href = "payment.html";
+    window.location.href = "choose-bank.html";
 });
 
 /* ===========================================

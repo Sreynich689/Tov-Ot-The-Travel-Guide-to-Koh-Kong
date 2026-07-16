@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KHQR Payment Overlay</title>
+  
+  <link rel="stylesheet" href="../assets/css/global.css">
+  <link rel="stylesheet" href="../assets/css/payment.css">
+  
   <style>
     /* Reset margins */
     * {
@@ -45,7 +49,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: url('background.png') no-repeat center center;
+      background: url('../assets/images/bank/aba-background.png') no-repeat center center;
       background-size: cover;
       filter: blur(5px); 
       z-index: 1;
@@ -71,6 +75,7 @@
       justify-content: center;
       align-items: center;
       animation: popIn 0.3s ease-out;
+      cursor: pointer;
     }
 
     .khqr-image {
@@ -95,17 +100,30 @@
 </head>
 <body>
 
-<div class="app-container">
+  <div class="app-container">
 
     <div class="checkout-background"></div>
 
     <div class="overlay"></div>
 
     <div class="khqr-card-container">
-    <img src="QR.png" alt="KHQR Card" class="khqr-image">
+      <img src="../assets/images/bank/QR.png" alt="KHQR Card" class="khqr-image">
     </div>
 
   </div>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const card = document.querySelector(".khqr-card-container");
+        if (card) {
+            card.addEventListener("click", function() {
+                const proceed = confirm("Simulating QR code scan. Confirm payment to proceed?");
+                if (proceed) {
+                    window.location.href = "payment-successful.html";
+                }
+            });
+        }
+    });
+  </script>
 </body>
 </html>

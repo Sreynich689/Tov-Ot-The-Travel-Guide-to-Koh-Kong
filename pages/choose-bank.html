@@ -9,18 +9,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/payment.css">
 </head>
 <body class="bg-white text-dark">
 
     <header class="py-4 mb-3">
         <div class="container">
-            <a href="../../index.html" class="text-decoration-none d-flex align-items-center gap-2">
-    <link rel="icon" type="image/png" href="../../assets/images/homepic/logo.png">
-                <img src="../../assets/images/homepic/logo.png" alt="Tov Ot Logo" class="logo me-2" width="40" height="40">
+            <a href="../index.html" class="text-decoration-none d-flex align-items-center gap-2">
+                <img src="../assets/images/homepic/logo.png" alt="Tov Ot Logo" class="logo me-2" width="40" height="40">
                 <span class="fs-4 fw-bold text-brand">Tov Ot</span>
             </a>
         </div>
@@ -68,8 +67,8 @@
                         <label class="d-flex justify-content-between align-items-center cursor-pointer payment-method-row">
                             <div class="d-flex align-items-center gap-4">
                                 <div class="method-logo aba-logo rounded d-flex justify-content-center align-items-center">
-                                    <img src="../../assets/images/bank/aba.png" class="img-fluid rounded" alt="Card">
-                            </div>
+                                    <img src="../assets/images/bank/aba.png" class="img-fluid rounded" alt="ABA PAY">
+                                </div>
                                 <span class="fw-bold fs-5">ABA PAY</span>
                             </div>
                             <input type="radio" name="payment_method" value="aba" class="d-none">
@@ -79,19 +78,18 @@
                         <label class="d-flex justify-content-between align-items-center cursor-pointer payment-method-row">
                             <div class="d-flex align-items-center gap-4">
                                 <div class="method-logo acleda-logo rounded d-flex justify-content-center align-items-center">
-                                    <img src="../../assets/images/bank/aceleda.png" class="img-fluid rounded" alt="Card">
+                                    <img src="../assets/images/bank/aceleda.png" class="img-fluid rounded" alt="ACLEDA PAY">
                                 </div>
                                 <span class="fw-bold fs-5">ACLEDA PAY</span>
                             </div>
                             <input type="radio" name="payment_method" value="acleda" class="d-none">
-                            
                             <span class="custom-radio"></span>
                         </label>
 
                         <label class="d-flex justify-content-between align-items-center cursor-pointer payment-method-row">
                             <div class="d-flex align-items-center gap-4">
                                 <div class="method-logo card-logo rounded d-flex justify-content-center align-items-center">
-                                    <img src="../../assets/images/bank/credit-card.png" class="img-fluid rounded" alt="Card">
+                                    <img src="../assets/images/bank/credit-card.png" class="img-fluid rounded" alt="Credit Card">
                                 </div>
                                 <span class="fw-bold fs-5">Credit / Debit Card</span>
                             </div>
@@ -101,8 +99,8 @@
 
                         <label class="d-flex justify-content-between align-items-center cursor-pointer payment-method-row">
                             <div class="d-flex align-items-center gap-4">
-                                <div class="method-logo wing-logo rounded d-flex justify-content-center align-items-center ">
-                                    <img src="../../assets/images/bank/wing.png" class="img-fluid rounded" alt="Card">
+                                <div class="method-logo wing-logo rounded d-flex justify-content-center align-items-center">
+                                    <img src="../assets/images/bank/wing.png" class="img-fluid rounded" alt="WingBank">
                                 </div>
                                 <span class="fw-bold fs-5">WingBank</span>
                             </div>
@@ -132,7 +130,7 @@
                                 </div>
                                 <small class="text-muted" style="font-size: 10px;">By <strong class="text-dark text-decoration-underline">Srey Neang Travel Tour</strong></small>
                             </div>
-                            <img src="../../assets/images/homepic/waterfall.png" alt="Tour" class="rounded object-fit-cover" width="168" height="109">
+                            <img src="../assets/images/homepic/waterfall.png" alt="Tour" class="rounded object-fit-cover" width="168" height="109">
                         </div>
 
                         <hr class="text-secondary opacity-25 mt-4 mb-3">
@@ -150,7 +148,7 @@
                         </div>
 
                         <div class="mb-3 mt-4">
-                            <a href="#" class="text-dark fw-bold text-decoration-underline d-block mb-2" style="font-size: 11px;">Change</a>
+                            <a href="contact.html" class="text-dark fw-bold text-decoration-underline d-block mb-2" style="font-size: 11px;">Change</a>
                             <hr class="text-secondary opacity-25 my-2">
                             <div class="d-flex align-items-center gap-2 text-secondary mt-3 ms-2" style="font-size: 11px;">
                                 <i class="bi bi-slash-circle bg-secondary bg-opacity-25 rounded-circle p-1"></i> <span>Non-refundable</span>
@@ -178,7 +176,7 @@
         </div>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.css"></script>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/payment.js"></script>
 </body>
 </html>
