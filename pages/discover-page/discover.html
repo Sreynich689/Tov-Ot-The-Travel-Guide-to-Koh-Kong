@@ -236,83 +236,112 @@
     </div>
 </section>
 
-<!-- Activities -->
+<!--Activities-->
 <section id="activities" class="container py-5">
+    <h2 class="fw-bold mb-4">Activities</h2>
+    <div class="row">
+        <div class="col-lg-3 budget-side">
+            <input
+                type="range"
+                id="budgetSlider"
+                min="0"
+                max="100"
+                value="0">
 
-    <div class="d-flex justify-content-between mb-4">
-        <h2>Activities</h2>
-    </div>
-    <div class="card-wrapper">
-        <div class="card-container">
+            <div class="currency-row">
 
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top rounded-4" src="../../assets/images/homepic/tatai.png" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Tatai Waterfall</h5>
-                    <p class="card-text">A beautiful jungle waterfall on the edge fo the Cardamom</p>
-                    <a href="../review-page/review.html" class="btn btn-primary">Explore More</a>
+                <div class="currency-pill">
+                    KHR
+                    <div id="khrValue">0</div>
                 </div>
-            </div>
 
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top rounded-4" src="../../assets/images/homepic/kaiyaking.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Kayaking Tatai River</h5>
-                    <p class="card-text">Cambodia's largest island, still wild</p>
-                    <a href="#" class="btn btn-primary">Explore More</a>
+                <div class="currency-pill">
+                    USD
+                    <div id="usdValue">0</div>
                 </div>
-            </div>
 
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top rounded-4" src="../../assets/images/homepic/fireflies.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Fireflies sightseeing</h5>
-                    <p class="card-text">A jungle cascade on the edge of the Cardmoms</p>
-                    <a href="#" class="btn btn-primary">Explore More</a>
-                </div>
             </div>
 
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top rounded-4" src="../../assets/images/homepic/krasop.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Explore Peam Krasop</h5>
-                    <p class="card-text">Mangrove sanctuary teeming with life</p>
-                    <a href="#" class="btn btn-primary">Explore More</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top rounded-4" src="../../assets/images/homepic/snerbeach.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Sner Beach Picnic</h5>
-                    <p class="card-text">Mangrove sanctuary teeming with life</p>
-                    <a href="#" class="btn btn-primary">Explore More</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top rounded-4" src="../../assets/images/homepic/sunset.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Riverfront Sunset</h5>
-                    <p class="card-text">Eco-tourism deep in the rainforest</p>
-                    <a href="#" class="btn btn-primary">Explore More</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top rounded-4" src="../../assets/images/homepic/phumneasat.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Visit Phum Neasat</h5>
-                    <p class="card-text">Explore the village and buy fresh seafood from boats</p>
-                    <a href="#" class="btn btn-primary">Explore More</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top rounded-4" src="../../assets/images/homepic/nightmarket.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Night Market Walk</h5>
-                    <p class="card-text">Explore authentic street-food and local night life</p>
-                    <a href="#" class="btn btn-primary">Explore More</a>
-                </div>
-            </div>
         </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="col-lg-9">
+            <div class="card-wrapper">
+                <div class="card-container">
+
+                    <div class="card" style="width: 18rem;">
+                    <img class="card-img-top rounded-4" src="../../assets/images/homepic/tatai.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Tatai Waterfall</h5>
+                        <p class="card-text">A beautiful jungle waterfall on the edge fo the Cardamom</p>
+                        <a href="../review-page/review.html" class="btn btn-primary">Explore More</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top rounded-4" src="../../assets/images/homepic/kaiyaking.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Kayaking Tatai River</h5>
+                        <p class="card-text">Cambodia's largest island, still wild</p>
+                        <a href="#" class="btn btn-primary">Explore More</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top rounded-4" src="../../assets/images/homepic/fireflies.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Fireflies sightseeing</h5>
+                        <p class="card-text">A jungle cascade on the edge of the Cardmoms</p>
+                        <a href="#" class="btn btn-primary">Explore More</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top rounded-4" src="../../assets/images/homepic/krasop.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Explore Peam Krasop</h5>
+                        <p class="card-text">Mangrove sanctuary teeming with life</p>
+                        <a href="#" class="btn btn-primary">Explore More</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top rounded-4" src="../../assets/images/homepic/snerbeach.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Sner Beach Picnic</h5>
+                        <p class="card-text">Mangrove sanctuary teeming with life</p>
+                        <a href="#" class="btn btn-primary">Explore More</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top rounded-4" src="../../assets/images/homepic/sunset.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Riverfront Sunset</h5>
+                        <p class="card-text">Eco-tourism deep in the rainforest</p>
+                        <a href="#" class="btn btn-primary">Explore More</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top rounded-4" src="../../assets/images/homepic/phumneasat.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Visit Phum Neasat</h5>
+                        <p class="card-text">Explore the village and buy fresh seafood from boats</p>
+                        <a href="#" class="btn btn-primary">Explore More</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top rounded-4" src="../../assets/images/homepic/nightmarket.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Night Market Walk</h5>
+                        <p class="card-text">Explore authentic street-food and local night life</p>
+                        <a href="#" class="btn btn-primary">Explore More</a>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+        </div>
+
     </div>
 </section>
 <!--Place to Stay-->
@@ -328,7 +357,7 @@
                 <div class="card-body">
                     <h5 class="card-title">YOUNG wild & free</h5>
                     <p class="card-text">#3 Best Value of 77 places to stay in Koh Kong</p>
-                    <a href="../review-page/review.html" class="btn btn-primary">Check Availability</a>
+                    <a href="../review-page/reviewplace.html" class="btn btn-primary">Check Availability</a>
                 </div>
             </div>
 
@@ -479,5 +508,6 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script src="discover.js"></script>
 </body>
 </html>
