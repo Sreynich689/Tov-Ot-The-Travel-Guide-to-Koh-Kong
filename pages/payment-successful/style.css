@@ -1,0 +1,90 @@
+/* ===========================
+   BASE & RESET
+=========================== */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff !important; 
+    overflow: hidden; /* Prevents scrollbars during animation */
+}
+
+/* ===========================
+   CONFETTI BACKGROUND
+=========================== */
+.confetti-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* Replace this URL with the path to your actual confetti image */
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+    opacity: 1;
+    transition: opacity 1.2s ease-in-out;
+}
+
+/* Class added by JS to fade out the confetti */
+.fade-out {
+    opacity: 0 !important;
+    pointer-events: none;
+}
+
+/* ===========================
+   LAYOUT & CARD STYLING
+=========================== */
+.success-wrapper {
+    width: 100%;
+    max-width: 360px; /* Controls the width to match the image proportions */
+}
+
+.success-card {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Forces a perfect square */
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.04); /* Soft drop shadow */
+    z-index: 2; /* Keeps card above the confetti */
+}
+
+.tracking-tight {
+    letter-spacing: -0.5px;
+}
+
+/* ===========================
+   BUTTON STYLING & ANIMATION
+=========================== */
+.btn-brand { 
+    background-color: #4285F4; 
+    color: white; 
+    border: none;
+    border-radius: 8px;
+    padding: 12px 0;
+    font-size: 14px;
+    transition: background-color 0.3s ease, opacity 1.2s ease-in-out;
+    z-index: 2;
+}
+
+.btn-brand:hover { 
+    background-color: #2b6bd8; 
+    color: white; 
+}
+
+/* Initial state for the button (invisible and unclickable) */
+.hidden-btn {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px); /* Slight upward position for a smooth drop-in */
+    transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out;
+}
+
+/* Class added by JS to fade in the button */
+.fade-in {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}

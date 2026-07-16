@@ -1,0 +1,127 @@
+/* ===========================
+   BASE & RESET
+=========================== */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Specific Dark Blue Background mimicking the image */
+.payment-page-bg {
+    background: radial-gradient(circle at center, #023875 0%, #01214a 100%);
+    overflow-x: hidden;
+}
+
+.text-brand { color: #4285F4 !important; }
+.btn-brand { 
+    background-color: #4285F4; 
+    color: white; 
+    border: none;
+    transition: 0.3s ease;
+}
+.btn-brand:hover { 
+    background-color: #2b6bd8; 
+    color: white; 
+}
+
+/* ===========================
+   MAIN WRAPPER & PANELS
+=========================== */
+.payment-wrapper {
+    max-width: 750px;
+    border-radius: 12px;
+    background: transparent; /* Lets right side show the body bg, but we style panels specifically */
+}
+
+/* LEFT PANEL */
+.panel-left {
+    border-radius: 8px 0 0 8px;
+    overflow: hidden; /* Keeps the bottom gray box inside the rounded corners */
+}
+
+.bg-gray-light {
+    background-color: #e5e5e5;
+}
+
+.dashed-divider {
+    border-top: 1px dashed #b0b0b0;
+    width: 100%;
+}
+
+/* RIGHT PANEL */
+.panel-right {
+    background-color: transparent; /* Inherits the dark blue */
+}
+
+/* ===========================
+   FORM ELEMENTS
+=========================== */
+.custom-input {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #333;
+    transition: all 0.2s ease;
+}
+
+.custom-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.4);
+    border-color: #4285F4;
+}
+
+.custom-input::placeholder {
+    color: #999;
+}
+
+.custom-btn {
+    border-radius: 8px;
+    padding: 10px 0;
+}
+
+.card-icons-box img {
+    height: 22px;
+    object-fit: contain;
+}
+
+/* ===========================
+   BACKGROUND ILLUSTRATION 
+=========================== */
+/* This mimics the graphics found in the bottom right corner of the original image */
+.bg-illustration {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    width: 300px;
+    height: 200px;
+    background-image: url('https://via.placeholder.com/300x200/01214a/5588ff?text=Illustration+Graphic');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    z-index: -1;
+    opacity: 0.6; /* Blended into background */
+}
+
+/* ===========================
+   RESPONSIVE (MOBILE)
+=========================== */
+@media (max-width: 768px) {
+    .panel-left {
+        border-radius: 8px 8px 0 0;
+    }
+    
+    /* Make right panel stand out slightly on mobile if stacked */
+    .panel-right {
+        background: rgba(0, 0, 0, 0.1); 
+        border-radius: 0 0 8px 8px;
+    }
+
+    .payment-wrapper {
+        margin: 20px;
+    }
+}

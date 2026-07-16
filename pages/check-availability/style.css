@@ -1,0 +1,118 @@
+/* ===========================
+   BASE & RESET
+=========================== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+}
+
+.main-container {
+    max-width: 1000px; /* Constrains the width to match the screenshot proportions */
+}
+
+/* ===========================
+   TOP NAVIGATION
+=========================== */
+.custom-nav-bar {
+    background-color: #1a365d; /* Dark Blue */
+}
+
+.custom-nav-bar .nav-link {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.custom-nav-bar .nav-link:hover {
+    color: #a4c8ff;
+}
+
+.custom-nav-bar i {
+    margin-right: 4px;
+}
+
+.btn-signin {
+    background-color: #4285F4;
+    border: none;
+    font-size: 14px;
+}
+
+/* ===========================
+   SEARCH BAR
+=========================== */
+.search-pill {
+    background-color: #dbeafe; /* Very light blue */
+    color: #1e3a8a; /* Darker blue text */
+    border: 1px solid #bfdbfe;
+}
+
+.search-pill input {
+    color: #1e3a8a;
+    font-weight: 600;
+    outline: none;
+}
+
+/* ===========================
+   IMAGE GALLERY GRID
+=========================== */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 200px 200px;
+    gap: 15px;
+}
+
+.gallery-main {
+    grid-row: 1 / span 2;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Responsive adjustment for mobile gallery */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 150px 150px;
+    }
+    .gallery-main {
+        grid-row: 1;
+    }
+}
+
+/* ===========================
+   PROPERTY HEADER & CARDS
+=========================== */
+.property-header-card {
+    border-color: #e5e7eb !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.content-card {
+    border-color: #e5e7eb !important;
+    border-radius: 12px !important; /* Slightly more rounded corners for these boxes */
+}
+
+.highlight-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.text-primary {
+    color: #4285F4 !important;
+}
+
+.btn-primary {
+    background-color: #4285F4;
+    border-color: #4285F4;
+}
+.btn-primary:hover {
+    background-color: #2b6bd8;
+    border-color: #2b6bd8;
+}
