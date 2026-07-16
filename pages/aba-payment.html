@@ -38,8 +38,10 @@
       overflow: hidden;      /* Clips the background blur to the container */
       box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6); /* Adds drop shadow on desktop */
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding: 20px;
     }
 
     /* 2. Background Image Container (now bounded by .app-container) */
@@ -66,16 +68,17 @@
       z-index: 2;
     }
 
-    /* 4. Centered KHQR Image Card */
+    /* 4. Centered KHQR Image Card & Button */
     .khqr-card-container {
       position: relative;
       z-index: 10;
       width: 280px; /* Sightly sized down to fit the bounded container beautifully */
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       animation: popIn 0.3s ease-out;
-      cursor: pointer;
+      gap: 20px;
     }
 
     .khqr-image {
@@ -83,6 +86,27 @@
       height: auto;
       border-radius: 16px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .confirm-btn {
+      background-color: #0080ff;
+      color: white;
+      text-decoration: none;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      box-shadow: 0 4px 15px rgba(0, 128, 255, 0.4);
+      transition: background-color 0.2s ease, transform 0.2s ease;
+      text-align: center;
+      width: 100%;
+    }
+
+    .confirm-btn:hover {
+      background-color: #0066cc;
+      transform: translateY(-2px);
+      color: white;
     }
 
     /* Smooth entrance animation */
@@ -108,22 +132,10 @@
 
     <div class="khqr-card-container">
       <img src="../assets/images/bank/QR.png" alt="KHQR Card" class="khqr-image">
+      <a href="payment-successful.html" class="confirm-btn">Confirm Payment</a>
     </div>
 
   </div>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const card = document.querySelector(".khqr-card-container");
-        if (card) {
-            card.addEventListener("click", function() {
-                const proceed = confirm("Simulating QR code scan. Confirm payment to proceed?");
-                if (proceed) {
-                    window.location.href = "payment-successful.html";
-                }
-            });
-        }
-    });
-  </script>
 </body>
 </html>
