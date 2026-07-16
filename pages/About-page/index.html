@@ -4,36 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-
-    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap" rel="stylesheet">
-    
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="page-wrapper">
-        <div class="about-img">
-            <img src="https://cdn.kiripost.com/static/images/481455788_953082280346591_39136880.2e16d0ba.fill-960x540.jpg">
-        </div>
-        <div class="what-we-do">
-            <h2>What We Do</h2>
-            <p>We understand that planning a trip can be challenging, especially when costs go over budget, destinations do not match expectations, or booking feels complicated. That is why we designed a platform that is easy to use,trustworthy, and built to help young travelers find the right trip without the confusion.</p>
-            <p>Our mission is to make travel planning clearer, faster, and more enjoyable for every young explorer.</p>
-        </div>
-        <div class="contact-section">
-            <h2>Contact Us</h2>
-            <input class="form" type="text" placeholder="Name">
-            <input class="form" type="email" placeholder="Email">
-            <textarea class="form" placeholder="Message"></textarea>
-            <button class="submit-btn">Submit</button>
+
+    <div class="container py-3">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+
+                <div class="about-img mb-3">
+                    <img src="https://cdn.kiripost.com/static/images/481455788_953082280346591_39136880.2e16d0ba.fill-960x540.jpg" alt="About image">
+                </div>
+
+                <div class="what-we-do mb-3">
+                    <h2 class="what-we-do-heading">What we do</h2>
+                    <p class="what-we-do-text">
+                        We understand that planning a trip can be challenging, especially when costs go over budget,
+                        destinations do not match expectations, or booking feels complicated. That is why we designed
+                        a platform that is easy to use, trustworthy, and built to help young travelers find the right
+                        trip without the confusion.
+                    </p>
+                    <p class="what-we-do-text">
+                        Our mission is to make travel planning clearer, faster, and more enjoyable for every young explorer.
+                    </p>
+                </div>
+
+                <div class="contact-section">
+                    <h2 class="contact-heading">Contact Us</h2>
+                    <input class="form" type="text" placeholder="Name">
+                    <input class="form" type="email" placeholder="Email">
+                    <textarea class="form" placeholder="Message"></textarea>
+                    <button class="submit-btn">Submit</button>
+                </div>
+
+            </div>
         </div>
     </div>
-    
-<script src="script.js"></script>
 
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
