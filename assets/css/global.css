@@ -1,0 +1,188 @@
+/* ==============================
+GLOBAL TYPOGRAPHY & BODY
+============================== */
+body {
+    padding-top: 16px;
+    font-family: 'Space Grotesk', sans-serif;
+    background: #f8fbff;
+    color: #333;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+h1 { font-size: 61px; }
+h2 { font-size: 49px; }
+h3 { font-size: 39px; }
+h4 { font-size: 31px; }
+
+/* --- Base Body Text (B1) --- */
+p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.000rem; /* 16px */
+    font-weight: 400;    /* Regular */
+    color: #111111;      /* Adjust text color as needed */
+    line-height: 1.5;    /* Standard breathing room for body text */
+}
+p.b1{
+    font-family:'Clash Display', sans-serif;
+    font-weight: 500;    /* medium */
+    font-size: 28px;     /* 28 */
+    line-height: 36px;
+    color: #193767
+}
+
+p.b2{
+    font-family:'Clash Display', sans-serif;
+    font-weight: 500;    /* medium */
+    font-size: 28px;     /* 28 */
+    line-height: 36px;
+    color: #ebf3fe
+}
+p.b3{
+    font-family:'Clash Display', sans-serif;
+    font-weight: 400;    /* medium */
+    font-size: 28px;     /* 28 */
+    line-height: 36px;
+    color: #ebf3fe
+}
+
+
+/* --- Subtitles (Clash Display) --- */
+.s1-subtitle {
+    font-family: 'Clash Display' sans-serif;
+    font-size: 1.563rem; /* 25px */
+    font-weight: 500;    /* Medium */
+}
+
+.s2-subtitle {
+    font-family: 'Clash Display', sans-serif;
+    font-size: 1.250rem; /* 20px */
+    font-weight: 500;    /* Medium */
+}
+
+/* --- Captions (Space Grotesk) --- */
+.c1-caption {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.813rem; /* 13px */
+    font-weight: 400;    /* Regular */
+}
+
+.c2-caption {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.625rem; /* 10px */
+    font-weight: 300;    /* Light */
+}
+/* Smooth button feel */
+button {
+    transition: 0.3s;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+/* ==============================
+GLOBAL NAVBAR
+============================== */
+.navbar {
+    background: #3B82F6;
+    padding: 15px 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+
+.navbar-brand {
+    font-family: 'Clash Display', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1E88E5 !important;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Clash Display', sans-serif;
+    color: #ebf3fe !important;
+    font-weight: 500;
+    padding: 10px 18px !important;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    background: #c2d8fc;
+    color: #1E88E5 !important;
+}
+
+.dropdown-menu {
+    border: none;
+    border-radius: 18px;
+    padding: 12px;
+    margin-top: 15px;
+    box-shadow: 0 12px 30px rgba(0,0,0,.12);
+}
+
+.dropdown-item {
+    border-radius: 12px;
+    padding: 10px 15px;
+    font-weight: 500;
+    font-family: 'Space Grotesk', sans-serif;
+    transition: all 0.25s ease;
+}
+
+.dropdown-item:hover {
+    background: #EAF4FF;
+    color: #1E88E5;
+}
+
+.dropdown-item i {
+    color: #1E88E5;
+    margin-right: 10px;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        padding-top: 10px;
+    }
+}
+
+/* ==============================
+GLOBAL FOOTER
+============================== */
+.footer {
+    background: #3B82F6;
+    color: white;
+}
+
+.footer h4,
+.footer h5 {
+    letter-spacing: .5px;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #d9e7ff;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.footer-links a:hover {
+    color: #193767;
+    padding-left: 5px;
+}
+
+.footer i {
+    color: #ebf3fe;
+}

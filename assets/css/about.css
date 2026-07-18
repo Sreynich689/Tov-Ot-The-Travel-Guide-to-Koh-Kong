@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ── IMAGE ── */
+.about-img img {
+    width: 100%;
+    border-radius: 12px;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+/* ── WHAT WE DO CARD ── */
+.what-we-do {
+    background-color: #3B82F6;
+    border-radius: 12px;
+    padding: 28px 24px;
+}
+
+.what-we-do-heading {
+    font-family: "Clash Display", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    color: #EBF3FE;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.what-we-do-text {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #EBF3FE;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.what-we-do-text:last-child {
+    margin-bottom: 0;
+}
+
+/* ── CONTACT SECTION ── */
+.contact-section {
+    background-color: #F7F8FC;
+    padding: 20px 0;
+}
+
+.contact-heading {
+    font-family: "Clash Display", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    color: #0F172A;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+/* ── FORM INPUTS ── */
+.form {
+    width: 100%;
+    background-color: #E2E4E5;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    padding: 16px 14px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #888A8B;
+    border-radius: 12px;
+    display: block;
+}
+
+.form::placeholder {
+    color: #888A8B;
+}
+
+.form:focus {
+    outline: 1.5px solid #3B82F6;
+}
+
+textarea.form {
+    height: 160px;
+    resize: none;
+}
+
+/* ── SUBMIT BUTTON ── */
+.submit-btn {
+    width: 100%;
+    border: none;
+    background: #3B82F6;
+    color: #fff;
+    padding: 15px;
+    border-radius: 30px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .3s;
+}
+
+.submit-btn:hover {
+    background: #2563EB;
+}
+
+/* ── DESKTOP — scale up font sizes only ── */
+@media (min-width: 768px) {
+    .about-img img {
+        height: 380px;
+    }
+
+    .what-we-do-heading {
+        font-size: 49px;
+    }
+
+    .contact-heading {
+        font-size: 49px;
+    }
+
+    .what-we-do-text {
+        font-size: 17px;
+        font-weight: 400;  /* lighter on desktop */
+    }
+}
+
+/* ── WIDE DESKTOP — expand width ── */
+@media (min-width: 992px) {
+    .col-lg-6 {
+        max-width: 900px !important;
+        flex: 0 0 900px !important;
+    }
+}

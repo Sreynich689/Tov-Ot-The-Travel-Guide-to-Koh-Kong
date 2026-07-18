@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tov Ot | Plan Trip</title>
+
+    <link rel="icon" type="image/png" href="../assets/images/homepic/logo.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="../assets/css/global.css">
+
+    <!-- Fonts -->
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=space-grotesk@300,400,500&display=swap" rel="stylesheet">
+
+    <style>
+        .plan-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/images/homepic/banner.png") center center/cover no-repeat;
+            color: white;
+            padding: 120px 0 80px 0;
+            text-align: center;
+        }
+        .feature-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,.05);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-icon {
+            font-size: 40px;
+            color: #3B82F6;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
+    <div class="container">
+
+        <a class="navbar-brand d-flex align-items-center fw-bold" href="../index.html">
+            <img src="../assets/images/homepic/icon.png" alt="TOV OT Logo" class="logo me-2">
+            <span class="text-white">Tov Ot</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+            <ul class="navbar-nav gap-lg-3">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+
+                <!-- Discover -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Discover
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="discover.html#destination">
+                            <i class="bi bi-geo-alt-fill"></i> Destination
+                        </a></li>
+
+                        <li><a class="dropdown-item" href="discover.html#activities">
+                            <i class="bi bi-compass-fill"></i> Activities
+                        </a></li>
+                    </ul>
+                </li>
+
+                <!-- Plan Trip -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                        Plan Trip
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="plantrip.html#booking">
+                            <i class="bi bi-calendar-check"></i> Booking
+                        </a></li>
+
+                        <li><a class="dropdown-item" href="plantrip.html#budget">
+                            <i class="bi bi-wallet2"></i> Budget Plan
+                        </a></li>
+
+                        <li><a class="dropdown-item" href="plantrip.html#payment">
+                            <i class="bi bi-credit-card"></i> Payment
+                        </a></li>
+                    </ul>
+                </li>
+
+                <!-- Review -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Review
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="review.html#testimonial">
+                            <i class="bi bi-chat-square-heart"></i> Testimonial
+                        </a></li>
+
+                        <li><a class="dropdown-item" href="review.html#write-review">
+                            <i class="bi bi-pencil-square"></i> Write Your Review
+                        </a></li>
+
+                        <li><a class="dropdown-item" href="review.html#add-place">
+                            <i class="bi bi-plus-circle"></i> Add a Place
+                        </a></li>
+                    </ul>
+                </li>
+
+                <!-- About -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        About Us
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="about.html#description">
+                            <i class="bi bi-info-circle"></i> Description
+                        </a></li>
+
+                        <li><a class="dropdown-item" href="about.html#contact">
+                            <i class="bi bi-envelope"></i> Contact
+                        </a></li>
+                    </ul>
+                </li>
+
+                <!--Sign in-->
+                <li class="nav-item">
+                    <a class="nav-link" style="background-color: blue;" href="sign-in.html">
+                        Sign in
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<main>
+
+    <!-- Plan Hero -->
+    <header class="plan-hero">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Plan Your Trip</h1>
+            <p class="lead text-white">Customize and manage your Koh Kong travel budget, bookings, and payments.</p>
+        </div>
+    </header>
+
+    <!-- Features Sections -->
+    <section class="container py-5">
+        <div class="row g-4">
+            <!-- Booking -->
+            <div class="col-md-4" id="booking">
+                <div class="feature-card text-center">
+                    <div class="feature-icon">
+                        <i class="bi bi-calendar-check"></i>
+                    </div>
+                    <h3 class="fw-bold">Easy Booking</h3>
+                    <p class="text-muted">Book local resorts, bungalows, boat tours, and restaurants with ease.</p>
+                    <a href="discover.html" class="btn btn-outline-primary rounded-pill px-4">Find Places</a>
+                </div>
+            </div>
+
+            <!-- Budget Plan -->
+            <div class="col-md-4" id="budget">
+                <div class="feature-card text-center">
+                    <div class="feature-icon">
+                        <i class="bi bi-wallet2"></i>
+                    </div>
+                    <h3 class="fw-bold">Budget Plan</h3>
+                    <p class="text-muted">Calculate your daily expenses, foods, and transport costs automatically.</p>
+                    <a href="discover.html#activities" class="btn btn-outline-primary rounded-pill px-4">Try Budget Tool</a>
+                </div>
+            </div>
+
+            <!-- Payment -->
+            <div class="col-md-4" id="payment">
+                <div class="feature-card text-center">
+                    <div class="feature-icon">
+                        <i class="bi bi-credit-card"></i>
+                    </div>
+                    <h3 class="fw-bold">Secure Payment</h3>
+                    <p class="text-muted">Complete bookings with our safe payment options including local banks and cards.</p>
+                    <a href="contact.html" class="btn btn-outline-primary rounded-pill px-4">Pay Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer pt-5 pb-3">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h4 class="fw-bold text-white">
+                    <img src="../assets/images/homepic/icon.png" alt="TOV OT Logo" class="logo me-2">
+                    <span class="text-white">Tov Ot</span>
+                </h4>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="fw-bold text-white mb-3">Quick Links</h5>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="plantrip.html">Plan Trip</a></li>
+                    <li><a href="review.html">Review</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-12 mb-4">
+                <h5 class="fw-bold text-white mb-3">Contact Us</h5>
+
+                <div class="d-flex align-items-center mb-3">
+                    <i class="bi bi-telephone-fill me-2"></i>
+                    <span>+855 12 345 678</span>
+                </div>
+
+                <div class="d-flex align-items-center mb-3">
+                    <i class="bi bi-envelope-fill me-2"></i>
+                    <span>info@tovot.com</span>
+                </div>
+
+                <div class="d-flex align-items-center mb-3">
+                    <i class="bi bi-geo-alt-fill me-2"></i>
+                    <span>Koh Kong, Cambodia</span>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="border-light">
+
+        <div class="text-center text-light">
+            <p class="mb-1">© 2026 TOV OT | All Rights Reserved</p>
+            <small>Designed & Developed by TOV OT Team</small>
+        </div>
+
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
