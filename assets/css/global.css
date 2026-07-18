@@ -1,14 +1,14 @@
 /* ==============================
-   GLOBAL TYPOGRAPHY & BODY
+GLOBAL TYPOGRAPHY & BODY
 ============================== */
 body {
-    padding-top: 30px;
+    padding-top: 16px;
     font-family: 'Space Grotesk', sans-serif;
     background: #f8fbff;
     color: #333;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4{
     font-family: 'Clash Display', sans-serif;
     font-weight: 600;
     margin-bottom: 10px;
@@ -19,6 +19,63 @@ h2 { font-size: 49px; }
 h3 { font-size: 39px; }
 h4 { font-size: 31px; }
 
+/* --- Base Body Text (B1) --- */
+p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.000rem; /* 16px */
+    font-weight: 400;    /* Regular */
+    color: #111111;      /* Adjust text color as needed */
+    line-height: 1.5;    /* Standard breathing room for body text */
+}
+p.b1{
+    font-family:'Clash Display', sans-serif;
+    font-weight: 500;    /* medium */
+    font-size: 28px;     /* 28 */
+    line-height: 36px;
+    color: #193767
+}
+
+p.b2{
+    font-family:'Clash Display', sans-serif;
+    font-weight: 500;    /* medium */
+    font-size: 28px;     /* 28 */
+    line-height: 36px;
+    color: #ebf3fe
+}
+p.b3{
+    font-family:'Clash Display', sans-serif;
+    font-weight: 400;    /* medium */
+    font-size: 28px;     /* 28 */
+    line-height: 36px;
+    color: #ebf3fe
+}
+
+
+/* --- Subtitles (Clash Display) --- */
+.s1-subtitle {
+    font-family: 'Clash Display' sans-serif;
+    font-size: 1.563rem; /* 25px */
+    font-weight: 500;    /* Medium */
+}
+
+.s2-subtitle {
+    font-family: 'Clash Display', sans-serif;
+    font-size: 1.250rem; /* 20px */
+    font-weight: 500;    /* Medium */
+}
+
+/* --- Captions (Space Grotesk) --- */
+.c1-caption {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.813rem; /* 13px */
+    font-weight: 400;    /* Regular */
+}
+
+.c2-caption {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.625rem; /* 10px */
+    font-weight: 300;    /* Light */
+}
 /* Smooth button feel */
 button {
     transition: 0.3s;
@@ -30,7 +87,7 @@ a {
 }
 
 /* ==============================
-   GLOBAL NAVBAR
+GLOBAL NAVBAR
 ============================== */
 .navbar {
     background: #3B82F6;
@@ -99,7 +156,7 @@ a {
 }
 
 /* ==============================
-   GLOBAL FOOTER
+GLOBAL FOOTER
 ============================== */
 .footer {
     background: #3B82F6;

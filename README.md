@@ -1,14 +1,18 @@
 # Tov Ot
 
-Tov Ot is a static travel and tour website project focused on promoting destinations and trip planning for Koh Kong, Cambodia. The project is built as a front-end web experience with multiple pages for browsing, sign-in, sign-up, contact, and booking-related interactions.
+Tov Ot is a static travel and booking website for exploring destinations, planning trips, reviewing places, and booking stays in Koh Kong, Cambodia. The site is built with HTML, CSS, JavaScript, Bootstrap, and Bootstrap Icons.
 
-## Project Purpose
+## Features
 
-This project is intended to:
-- showcase travel destinations and activities,
-- present a modern and responsive landing page experience,
-- provide simple user-facing pages for sign-in, sign-up, contact, and booking,
-- serve as a lightweight static website prototype for future improvements or AI-assisted code changes.
+- Home page with travel branding and destination highlights
+- Discover page for destinations and activities
+- Plan Trip page for booking, budget, and payment sections
+- Review pages for testimonials, place details, and writing reviews
+- Stay search with check-in, check-out, number of people, and room selection
+- Check-in and check-out page with calendar-style date confirmation
+- Contact details and booking form page
+- Sign in, sign up, password reset, and verification pages
+- Payment flow pages for bank selection, ABA payment, credit card payment, and success confirmation
 
 ## Tech Stack
 
@@ -17,56 +21,103 @@ This project is intended to:
 - JavaScript
 - Bootstrap 5
 - Bootstrap Icons
-- Google Fonts
+- Google Fonts and Fontshare fonts
 
 ## Project Structure
 
-- assets/ — shared images, fonts, CSS, and library resources
-- components/ — reusable UI parts such as navbar, footer, and buttons
-- pages/ — page-specific HTML, CSS, and JavaScript files
-  - home-page/
-  - contact/
-  - Signin-page/
-  - Signup-page/
+```text
+Tov Ot/
+├── index.html
+├── README.md
+├── assets/
+│   ├── css/
+│   │   ├── global.css
+│   │   ├── home.css
+│   │   ├── discover.css
+│   │   ├── review.css
+│   │   ├── contact.css
+│   │   ├── payment.css
+│   │   ├── auth.css
+│   │   └── about.css
+│   ├── js/
+│   │   ├── auth.js
+│   │   ├── contact.js
+│   │   ├── discover.js
+│   │   ├── payment.js
+│   │   └── review.js
+│   └── images/
+└── pages/
+    ├── about.html
+    ├── check-in-checkout.html
+    ├── contact.html
+    ├── discover.html
+    ├── plantrip.html
+    ├── review.html
+    ├── reviewplace.html
+    ├── write-review.html
+    ├── sign-in.html
+    ├── sign-up.html
+    ├── forget-password.html
+    ├── reset-password.html
+    ├── verification.html
+    ├── choose-bank.html
+    ├── aba-payment.html
+    ├── credit-card.html
+    └── payment-successful.html
+```
 
 ## Main Pages
 
-- Home page: promotional landing experience for the travel brand
-- Contact page: contact and booking-related interface
-- Signin page: user login experience
-- Signup page: user registration experience
+- `index.html` - main landing page
+- `pages/discover.html` - destination and activity discovery
+- `pages/plantrip.html` - trip planning and booking information
+- `pages/review.html` - review overview and testimonials
+- `pages/reviewplace.html` - detailed property review page with search options
+- `pages/check-in-checkout.html` - check-in and check-out date confirmation page
+- `pages/contact.html` - booking contact form
+- `pages/about.html` - information about Tov Ot
+- `pages/sign-in.html` and `pages/sign-up.html` - authentication screens
+- `pages/choose-bank.html`, `pages/aba-payment.html`, `pages/credit-card.html`, and `pages/payment-successful.html` - payment flow
 
 ## How to Run
 
-Because this is a static website, no build step is required.
+This project is a static website, so it does not require installation or a build step.
 
-1. Open the project folder in a browser.
-2. Open any page directly from the pages/ directory, for example:
-   - pages/home-page/index.html
-   - pages/contact/index.html
+1. Open the project folder.
+2. Open `index.html` in a browser.
+3. Navigate through the site using the navbar and page links.
 
-You can also use a simple local server if preferred, but it is not required for basic viewing.
+For development, you can also run the project with a local live server extension such as VS Code Live Server.
 
-## Development Notes
+## Styling
 
-- This repository is mostly front-end focused.
-- Page-specific styles are usually stored alongside the HTML page in the same folder.
-- Shared assets and reusable UI elements should be placed in assets/ and components/ respectively.
-- If you are updating navigation or visual design, check both the page files and the shared components first.
+- Shared design rules are in `assets/css/global.css`.
+- Page-specific styles are separated by page area, such as `home.css`, `review.css`, `contact.css`, and `payment.css`.
+- Bootstrap is used for responsive layout utilities, components, and spacing.
+- Bootstrap Icons are used for navigation, search, booking, contact, and payment icons.
 
-## AI / Knowledge Base Notes
+## JavaScript
 
-This README is intended to help AI tools and future contributors understand the project quickly.
+JavaScript files are stored in `assets/js/`.
 
-Useful context for AI-assisted work:
-- The project is a static website, not a full-stack application.
-- Most changes will involve HTML, CSS, and JavaScript in the pages/ folder.
-- Styling is partly based on Bootstrap and custom CSS.
-- Images and other static media are stored in assets/.
+- `auth.js` handles authentication page interactions.
+- `contact.js` handles booking/contact form behavior.
+- `discover.js` handles discovery page interactions.
+- `payment.js` handles payment flow behavior.
+- `review.js` handles review page interactions.
 
-## Suggested Future Improvements
+## Notes
 
-- Add real form validation and submission handling
-- Improve responsiveness across all screen sizes
-- Connect contact and booking forms to a backend or form service
-- Refactor repeated UI into shared components more consistently
+- The website is currently front-end only.
+- Form submissions and payment actions are UI flows only unless connected to a backend later.
+- Images should be stored inside `assets/images/`.
+- Repeated sections such as the navbar and footer are currently written directly in each HTML file.
+
+## Future Improvements
+
+- Add backend support for real bookings, reviews, and payments.
+- Add stronger form validation.
+- Make check-in and check-out dates dynamic.
+- Reuse the navbar and footer with templates or components.
+- Improve accessibility labels and keyboard support across forms.
+- Continue refining mobile responsiveness.

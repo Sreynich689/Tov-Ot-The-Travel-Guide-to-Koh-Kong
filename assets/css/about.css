@@ -4,12 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #F7F8FC;
-    font-family: "Space Grotesk", sans-serif;
-    min-height: 100vh;
-}
-
 /* ── IMAGE ── */
 .about-img img {
     width: 100%;

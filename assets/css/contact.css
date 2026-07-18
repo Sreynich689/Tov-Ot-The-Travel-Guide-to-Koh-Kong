@@ -1,5 +1,5 @@
 /* ===========================
-   BASE & RESET
+BASE & RESET
 =========================== */
 * {
     margin: 0;
@@ -20,7 +20,7 @@ body {
 }
 
 /* ===========================
-   HEADER
+HEADER
 =========================== */
 header {
     background: #fff;
@@ -28,26 +28,19 @@ header {
     margin-bottom: 20px;
 }
 
-.logo {
-    display: flex;
+.site-logo {
+    display: inline-flex;
     align-items: center;
     gap: 10px;
-    text-decoration: none;
 }
 
-.logo img {
-    width: 45px;
-    height: auto;
-}
-
-.logo span {
-    font-size: 24px;
-    color: #4285F4;
-    font-weight: 600;
+.site-logo .logo {
+    height: 40px;
+    width: auto;
 }
 
 /* ===========================
-   BOOKING GRID & CARDS
+BOOKING GRID & CARDS
 =========================== */
 .booking-section {
     padding: 20px 0 40px;
@@ -67,7 +60,7 @@ header {
 }
 
 .card {
-    border: 1px solid #555; /* Darker border for the main forms */
+    border: 1px solid #e5e5e5;
 }
 
 .summary-card {
@@ -99,6 +92,7 @@ header {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: -0.5px;
+    margin-bottom: 0;
 }
 
 .card-description {
@@ -109,7 +103,7 @@ header {
 }
 
 /* ===========================
-   FORMS & INPUTS
+FORMS & INPUTS
 =========================== */
 form {
     margin-left: 47px; /* Indent the entire form to align under title */
@@ -141,7 +135,7 @@ form {
 input[type="text"], input[type="email"], select {
     width: 100%;
     padding: 10px 15px;
-    border: 1px solid #999;
+    border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 12px;
     outline: none;
@@ -184,7 +178,7 @@ input[type="text"], input[type="email"], select {
 .next-btn:hover { background: #2f6fe6; }
 
 /* ===========================
-   ACTIVITY DETAILS
+ACTIVITY DETAILS
 =========================== */
 .activity-card {
     display: flex;
@@ -215,7 +209,7 @@ input[type="text"], input[type="email"], select {
 }
 
 /* ===========================
-   SUMMARY CARD (RIGHT)
+SUMMARY CARD (RIGHT)
 =========================== */
 .summary-header {
     display: flex;
@@ -322,9 +316,9 @@ hr {
 .price-wrapper {
     width: 100%;
     display: flex;
-    justify-content: center; /* Centers the whole bar */
+    justify-content: center; 
     align-items: center;
-    gap: 40px; /* Space between amount, price, and button */
+    gap: 40px; 
 }
 
 .price-wrapper h2 {
@@ -349,50 +343,91 @@ hr {
 .continue-btn:hover { background: #2f6fe6; }
 
 /* ===========================
-   FOOTER
+FOOTER
 =========================== */
 .footer {
-    background: #4285F4;
-    color: white;
-    text-align: center;
-    padding: 60px 20px 30px;
+    background: #3B82F6;
+    color: #fff;
+    padding: 48px 0 24px;
 }
 
-.footer-logo {
-    margin-bottom: 25px;
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1.2fr;
+    gap: 40px;
+    align-items: start;
 }
 
-.footer-logo img {
-    width: 80px;
-    margin: 0 auto;
-    display: block;
+.footer h4,
+.footer h5 {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 18px;
 }
 
-.footer-menu {
+.footer h4 {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 30px;
-    list-style: none;
-    margin: 20px 0;
-    padding: 0;
+    gap: 10px;
+    font-size: 24px;
 }
 
-.footer-menu a {
-    color: white;
-    text-decoration: none;
+.footer .logo {
+    height: 40px;
+    width: auto;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #d9e7ff;
     font-size: 14px;
-    font-weight: 300;
     transition: 0.3s;
 }
 
-.footer-menu a:hover { opacity: 0.8; }
+.footer-links a:hover {
+    color: #193767;
+    padding-left: 5px;
+}
 
-.copyright {
-    margin-top: 20px;
-    font-size: 13px;
-    color: rgba(255,255,255,.8);
-    font-weight: 300;
+.footer-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.footer-contact-item i {
+    color: #ebf3fe;
+}
+
+.footer hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.35);
+    margin: 24px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-bottom p {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.footer-bottom small {
+    font-size: 12px;
 }
 
 /* ===========================
@@ -403,5 +438,5 @@ hr {
     form, .activity-card, .card-description { margin-left: 0; }
     .price-wrapper { flex-direction: column; text-align: center; gap: 20px; }
     .continue-btn { width: 100%; max-width: 320px; }
-    .footer-menu { flex-direction: column; gap: 12px; }
+    .footer-grid { grid-template-columns: 1fr; gap: 24px; }
 }

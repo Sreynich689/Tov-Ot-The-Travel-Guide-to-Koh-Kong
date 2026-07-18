@@ -116,6 +116,13 @@
     opacity:1;
 }
 
+.search-item select{
+    color:#222;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+}
+
 nav a{
     font-size:15px;
     color:#666;
@@ -400,6 +407,297 @@ nav a:hover{
     height:100%;
 }
 
+/* Check-in and check-out page */
+.check-page-body{
+    background:#8b8b8b;
+    padding-top:0;
+}
+
+.check-page{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:6px 0;
+}
+
+.check-panel{
+    width:min(100%, 1360px);
+    min-height:calc(100vh - 12px);
+    background:#fff;
+    border-radius:10px;
+    padding:72px;
+}
+
+.check-heading span{
+    display:block;
+    color:#2f80ed;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:1.6px;
+    text-transform:uppercase;
+    margin-bottom:14px;
+}
+
+.check-heading h1{
+    color:#17233f;
+    font-size:36px;
+    line-height:1.1;
+    margin-bottom:14px;
+}
+
+.check-heading p{
+    max-width:560px;
+    color:#778092;
+    font-size:14px;
+    line-height:1.7;
+    margin-bottom:24px;
+}
+
+.date-summary{
+    display:grid;
+    grid-template-columns:1fr 1fr 150px;
+    overflow:hidden;
+    border:8px solid #14213f;
+    border-radius:18px;
+    background:#14213f;
+    margin-bottom:48px;
+}
+
+.date-card,
+.night-card{
+    min-height:90px;
+    display:flex;
+    align-items:center;
+}
+
+.date-card{
+    gap:18px;
+    padding:18px 28px;
+    color:#fff;
+    background:#21345f;
+}
+
+.date-card.active{
+    color:#17233f;
+    background:#fff;
+    border-radius:10px;
+}
+
+.date-card i{
+    display:grid;
+    place-items:center;
+    width:46px;
+    height:46px;
+    color:#fff;
+    background:#3b8eea;
+    border-radius:12px;
+    font-size:20px;
+}
+
+.date-card span{
+    display:block;
+    color:inherit;
+    opacity:.75;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.8px;
+    text-transform:uppercase;
+}
+
+.date-card strong{
+    display:block;
+    font-size:16px;
+    line-height:1.3;
+}
+
+.date-card small{
+    display:block;
+    color:inherit;
+    opacity:.75;
+    font-size:11px;
+}
+
+.night-card{
+    justify-content:center;
+    flex-direction:column;
+    color:#fff;
+    background:#3b8eea;
+    border-radius:10px;
+}
+
+.night-card strong{
+    font-size:26px;
+    line-height:1;
+}
+
+.night-card span{
+    font-size:12px;
+    margin-top:7px;
+}
+
+.check-content{
+    display:grid;
+    grid-template-columns:minmax(360px, 560px) 1fr;
+    gap:64px;
+    align-items:start;
+}
+
+.calendar-card{
+    padding:0 36px;
+}
+
+.calendar-top{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:38px;
+}
+
+.calendar-top h2{
+    color:#30384f;
+    font-size:26px;
+    margin:0;
+}
+
+.calendar-top button{
+    width:34px;
+    height:34px;
+    border:0;
+    background:#fff;
+    color:#647083;
+    border-radius:50%;
+}
+
+.calendar-grid{
+    display:grid;
+    grid-template-columns:repeat(7, 1fr);
+}
+
+.week-days{
+    color:#2f80ed;
+    font-size:13px;
+    margin-bottom:18px;
+    text-align:center;
+}
+
+.dates{
+    border:1px solid #d8dce5;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.dates span{
+    aspect-ratio:1;
+    display:grid;
+    place-items:center;
+    color:#263047;
+    font-size:13px;
+    border-right:1px solid #e2e5eb;
+    border-bottom:1px solid #e2e5eb;
+    background:#fff;
+}
+
+.dates span:nth-child(7n){
+    border-right:0;
+}
+
+.dates span:nth-last-child(-n+7){
+    border-bottom:0;
+}
+
+.dates .muted{
+    color:#b4bac6;
+    background:#f4f5f8;
+}
+
+.dates .selected{
+    color:#fff;
+    background:#14213f;
+    border-radius:4px;
+}
+
+.stay-notes{
+    display:grid;
+    gap:0;
+}
+
+.stay-note{
+    display:grid;
+    grid-template-columns:50px 1fr;
+    gap:18px;
+    padding:0 0 28px;
+    margin-bottom:28px;
+    border-bottom:1px solid #e5e9f0;
+}
+
+.stay-note i{
+    display:grid;
+    place-items:center;
+    width:50px;
+    height:50px;
+    color:#2f80ed;
+    background:#f1f6ff;
+    border-radius:14px;
+    font-size:20px;
+}
+
+.stay-note h3{
+    color:#17233f;
+    font-family:"Space Grotesk",sans-serif;
+    font-size:17px;
+    font-weight:700;
+    margin-bottom:8px;
+}
+
+.stay-note h3 span{
+    color:#2f80ed;
+    background:#e7f1ff;
+    border-radius:6px;
+    font-size:12px;
+    padding:3px 8px;
+    margin-left:12px;
+}
+
+.stay-note p{
+    color:#727b8d;
+    font-size:13px;
+    line-height:1.6;
+    margin:0;
+}
+
+.check-actions{
+    display:flex;
+    align-items:center;
+    gap:22px;
+    justify-content:flex-end;
+    margin-top:26px;
+}
+
+.confirm-date-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-width:150px;
+    height:54px;
+    color:#fff;
+    background:#3b8eea;
+    border-radius:10px;
+    font-size:14px;
+    font-weight:700;
+    text-decoration:none;
+}
+
+.confirm-date-btn:hover{
+    color:#fff;
+    background:#2563eb;
+}
+
+.check-actions span{
+    color:#a0a7b5;
+    font-size:12px;
+}
+
 /* Media Queries */
 @media (max-width:992px){
     .gallery-main{
@@ -432,6 +730,19 @@ nav a:hover{
 
     .vertical-line{
         display:none;
+    }
+
+    .check-panel{
+        padding:36px 24px;
+    }
+
+    .date-summary,
+    .check-content{
+        grid-template-columns:1fr;
+    }
+
+    .calendar-card{
+        padding:0;
     }
 }
 
@@ -470,6 +781,24 @@ nav a:hover{
 
     .star-rating{
         justify-content:center;
+    }
+
+    .check-heading h1{
+        font-size:30px;
+    }
+
+    .date-card,
+    .night-card{
+        min-height:76px;
+    }
+
+    .date-card{
+        padding:16px;
+    }
+
+    .check-actions{
+        align-items:stretch;
+        flex-direction:column;
     }
 }
 
