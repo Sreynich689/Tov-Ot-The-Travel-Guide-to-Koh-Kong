@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KHQR Payment Overlay</title>
+  
+  <link rel="stylesheet" href="../assets/css/global.css">
+  <link rel="stylesheet" href="../assets/css/payment.css">
+  
+  <style>
+    /* Reset margins */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* The desktop background behind your app container */
+    body, html {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #0b0f19; /* Sleek dark background for desktop view */
+      overflow: hidden;
+    }
+
+    /* 1. Bounded Container (Simulates a tablet/device or modal on desktop) */
+    .app-container {
+      position: relative;
+      width: 100%;
+      max-width: 500px;      /* Restricts the width on desktop */
+      height: 100%;
+      max-height: 500px;     /* Restricts the height to match a square aspect ratio */
+      border-radius: 20px;   /* Smooth rounded corners for desktop view */
+      overflow: hidden;      /* Clips the background blur to the container */
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6); /* Adds drop shadow on desktop */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    /* 2. Background Image Container (now bounded by .app-container) */
+    .checkout-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('../assets/images/bank/aba-background.png') no-repeat center center;
+      background-size: cover;
+      filter: blur(5px); 
+      z-index: 1;
+    }
+
+    /* 3. Dark Overlay on top of the blur */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.2); 
+      z-index: 2;
+    }
+
+    /* 4. Centered KHQR Image Card & Button */
+    .khqr-card-container {
+      position: relative;
+      z-index: 10;
+      width: 280px; /* Sightly sized down to fit the bounded container beautifully */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      animation: popIn 0.3s ease-out;
+      gap: 20px;
+    }
+
+    .khqr-image {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .confirm-btn {
+      background-color: #0080ff;
+      color: white;
+      text-decoration: none;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      box-shadow: 0 4px 15px rgba(0, 128, 255, 0.4);
+      transition: background-color 0.2s ease, transform 0.2s ease;
+      text-align: center;
+      width: 100%;
+    }
+
+    .confirm-btn:hover {
+      background-color: #0066cc;
+      transform: translateY(-2px);
+      color: white;
+    }
+
+    /* Smooth entrance animation */
+    @keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="app-container">
+
+    <div class="checkout-background"></div>
+
+    <div class="overlay"></div>
+
+    <div class="khqr-card-container">
+      <img src="../assets/images/bank/QR.png" alt="KHQR Card" class="khqr-image">
+      <a href="payment-successful.html" class="confirm-btn">Confirm Payment</a>
+    </div>
+
+  </div>
+
+</body>
+</html>

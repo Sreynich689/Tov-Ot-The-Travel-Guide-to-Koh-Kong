@@ -1,0 +1,255 @@
+/* ==========================================================================
+   PAYMENT STYLES (Merged from choose-bank, credit-card, and payment-successful)
+   ========================================================================== */
+
+/* --- Base & Reset & Overrides --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff !important; 
+}
+
+/* Specific Dark Blue Background mimicking the credit card image */
+body.payment-page-bg {
+    background: radial-gradient(circle at center, #023875 0%, #01214a 100%);
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.text-brand { color: #4285F4 !important; }
+.btn-brand { 
+    background-color: #4285F4; 
+    color: white; 
+    border: none;
+    transition: 0.3s ease;
+}
+.btn-brand:hover { 
+    background-color: #2b6bd8; 
+    color: white; 
+}
+.text-primary { color: #0d6efd !important; }
+
+.cursor-pointer { cursor: pointer; }
+.transition-transform { transition: transform 0.3s ease; }
+
+
+/* --- Coupon Behavior (choose-bank) --- */
+.coupon-box {
+    border-radius: 6px;
+}
+
+.coupon-box:hover {
+    border-color: #b0b0b0 !important;
+}
+
+.coupon-input-area {
+    display: none; /* Handled by JS */
+}
+
+.coupon-input-area.active {
+    display: flex;
+}
+
+
+/* --- Payment Method UI (choose-bank) --- */
+.payment-method-row {
+    transition: opacity 0.2s ease;
+    margin-bottom: 5px;
+}
+
+/* Bank Logos */
+.method-logo {
+    width: 70px;
+    height: 70px;
+}
+.aba-logo { 
+    background-color: #003a5c; 
+    color: #fff; 
+    font-weight: 600; 
+    font-family: sans-serif; 
+    letter-spacing: 1px;
+}
+.acleda-logo { background-color: #1a3c63; }
+.card-logo { background: #f0f0f0; } /* Placeholder for the card graphic */
+.wing-logo { background-color: #a4ce3a; }
+
+/* Custom Radio Buttons */
+.custom-radio {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #666;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.2s;
+}
+
+input[type="radio"]:checked + .custom-radio {
+    border-color: #111;
+}
+
+input[type="radio"]:checked + .custom-radio::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background-color: #111;
+    border-radius: 50%;
+}
+
+
+/* --- Summary Card Overrides (choose-bank) --- */
+.summary-card-blue {
+    border: 3px solid #1a73e8 !important; 
+    overflow: hidden; /* Keeps the grey footer inside the rounded corners */
+}
+
+
+/* --- Credit Card Panels & Forms (credit-card) --- */
+.payment-wrapper {
+    max-width: 750px;
+    border-radius: 12px;
+    background: transparent; 
+}
+
+/* Left Panel */
+.panel-left {
+    border-radius: 8px 0 0 8px;
+    overflow: hidden; 
+}
+
+.bg-gray-light {
+    background-color: #e5e5e5;
+}
+
+.dashed-divider {
+    border-top: 1px dashed #b0b0b0;
+    width: 100%;
+}
+
+/* Right Panel */
+.panel-right {
+    background-color: transparent; 
+}
+
+/* Form Inputs */
+.custom-input {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #333;
+    transition: all 0.2s ease;
+}
+
+.custom-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.4);
+    border-color: #4285F4;
+}
+
+.custom-input::placeholder {
+    color: #999;
+}
+
+.custom-btn {
+    border-radius: 8px;
+    padding: 10px 0;
+}
+
+.card-icons-box img {
+    height: 22px;
+    object-fit: contain;
+}
+
+/* Background Illustration */
+.bg-illustration {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    width: 300px;
+    height: 200px;
+    background-image: url('https://via.placeholder.com/300x200/01214a/5588ff?text=Illustration+Graphic');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    z-index: -1;
+    opacity: 0.6; 
+}
+
+
+/* --- Confetti & Success Styling (payment-successful) --- */
+body.payment-success-body {
+    background-color: #ffffff !important; 
+    overflow: hidden; /* Prevents scrollbars during animation */
+}
+
+.confetti-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+    opacity: 1;
+    transition: opacity 1.2s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0 !important;
+    pointer-events: none;
+}
+
+.success-wrapper {
+    width: 100%;
+    max-width: 360px; 
+}
+
+.success-card {
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.04); 
+    z-index: 2; 
+}
+
+.tracking-tight {
+    letter-spacing: -0.5px;
+}
+
+.hidden-btn {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px); 
+    transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+
+/* --- Responsive layout adjustments --- */
+@media (max-width: 768px) {
+    .panel-left {
+        border-radius: 8px 8px 0 0;
+    }
+    
+    .panel-right {
+        background: rgba(0, 0, 0, 0.1); 
+        border-radius: 0 0 8px 8px;
+    }
+
+    .payment-wrapper {
+        margin: 20px;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tov Ot | Credit Card Payment</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/payment.css">
+</head>
+<body class="payment-page-bg">
+
+    <main class="container d-flex justify-content-center align-items-center min-vh-100 py-5">
+        
+        <div class="row payment-wrapper shadow-lg w-100">
+            
+            <div class="col-md-5 bg-white d-flex flex-column panel-left p-0">
+                
+                <div class="p-5 d-flex flex-column align-items-center justify-content-center flex-grow-1 text-center">
+                    <div class="d-flex align-items-center gap-2 mb-5">
+                        <img src="../assets/images/homepic/icon.png" alt="Tov Ot" class="img-fluid rounded" width="50">
+                        <span class="fs-3 fw-semibold text-brand">Tov Ot</span>
+                    </div>
+
+                    <p class="text-secondary fw-medium mb-2" style="font-size: 14px;">Amount to pay</p>
+                    <h2 class="fw-bold text-dark display-6 mb-0" style="letter-spacing: -0.5px;">185.00 USD</h2>
+                </div>
+
+                <div class="bg-gray-light p-4 summary-footer">
+                    <div class="d-flex justify-content-between mb-3 text-secondary" style="font-size: 13px;">
+                        <span>Subtotal:</span>
+                        <span class="fw-medium">185.00 USD</span>
+                    </div>
+                    
+                    <div class="dashed-divider mb-3"></div>
+                    
+                    <div class="d-flex justify-content-between text-dark">
+                        <span class="fw-bold" style="font-size: 14px;">TOTAL:</span>
+                        <span class="fw-bold" style="font-size: 14px;">185.00 USD</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-7 panel-right p-4 p-md-5 d-flex flex-column justify-content-center">
+                
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h3 class="text-white fw-light mb-0 fs-4">Credit / Debit Card</h3>
+                    <div class="card-icons-box bg-white rounded p-1 d-flex gap-1">
+                        <img src="../assets/images/bank/visa.png" alt="Visa" class="rounded-1">
+                        <img src="../assets/images/bank/mastercard.png" alt="Mastercard" class="rounded-1">
+                        <img src="../assets/images/bank/alipay.png" alt="Alipay" class="rounded-1">
+                    </div>
+                </div>
+
+                <form id="paymentForm">
+                    
+                    <div class="mb-4">
+                        <label class="form-label text-white mb-2" style="font-size: 13px;">Card number</label>
+                        <input type="text" id="cardNumber" class="form-control custom-input" placeholder="1234 1234 1234 1234" maxlength="19">
+                    </div>
+
+                    <div class="row gx-3 mb-4">
+                        <div class="col-6">
+                            <label class="form-label text-white mb-2" style="font-size: 13px;">Expiration Date</label>
+                            <input type="text" id="cardExpiry" class="form-control custom-input" placeholder="MM/YY" maxlength="5">
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label text-white mb-2" style="font-size: 13px;">Security Code</label>
+                            <input type="password" id="cardCvv" class="form-control custom-input" placeholder="CVC" maxlength="4">
+                        </div>
+                    </div>
+
+                    <p class="text-white opacity-75 mb-4" style="font-size: 10px; line-height: 1.5; max-width: 90%;">
+                        Encrypted storage and processing of credit/debit card payment is handled by our trusted solution ABA PayWay.
+                    </p>
+
+                    <button type="submit" class="btn btn-brand w-100 fw-medium fs-5 py-2 custom-btn shadow-sm">
+                        Confirm
+                    </button>
+                    
+                </form>
+
+            </div>
+
+        </div>
+    </main>
+
+    <div class="bg-illustration"></div>
+
+    <script src="../assets/js/payment.js"></script>
+</body>
+</html>
