@@ -1,6 +1,8 @@
 const slider = document.getElementById("budgetSlider");
 const usdValue = document.getElementById("usdValue");
 const khrValue = document.getElementById("khrValue");
+const activitiesSection = document.getElementById("activities");
+let budgetReloadStarted = false;
 
 function updateSlider() {
 
@@ -23,8 +25,30 @@ function updateSlider() {
             #ccc 100%
         )`;
 }
-// Update while sliding
-slider.addEventListener("input", updateSlider);
+
+function reloadToActivities() {
+    if (budgetReloadStarted) {
+        return;
+    }
+
+    budgetReloadStarted = true;
+    updateSlider();
+    sessionStorage.setItem("returnToActivities", "true");
+    window.location.href = `${window.location.pathname}#activities`;
+    window.location.reload();
+}
+
+slider.addEventListener("change", reloadToActivities);
+
+window.addEventListener("load", function () {
+    if (
+        sessionStorage.getItem("returnToActivities") === "true" ||
+        window.location.hash === "#activities"
+    ) {
+        sessionStorage.removeItem("returnToActivities");
+        activitiesSection.scrollIntoView({ block: "start" });
+    }
+});
 
 // Run once when page loads
 updateSlider();

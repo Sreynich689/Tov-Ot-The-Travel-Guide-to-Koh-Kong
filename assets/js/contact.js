@@ -74,7 +74,7 @@ continueBtn.addEventListener("click", function(){
 });
 
 /* ===========================================
-   PROMO CODE
+PROMO CODE
 =========================================== */
 applyPromo.addEventListener("click", function(){
     const code = promoCode.value.trim().toUpperCase();
