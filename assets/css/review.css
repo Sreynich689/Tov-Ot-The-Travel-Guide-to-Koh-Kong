@@ -181,8 +181,15 @@ img{
     margin-right:8px;
 }
 
-.rating i{
-    color:#3B82F6;
+.rating i {
+    font-size: 35px;
+    color: #3B82F6;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.rating i.active {
+    color: #3B82F6;
 }
 .highlight-card{
     background:#fff;

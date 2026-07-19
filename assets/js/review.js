@@ -47,3 +47,32 @@ buttons.forEach(button => {
         this.classList.add("active");
     });
 });
+
+const stars = document.querySelectorAll(".star");
+const ratingValue = document.getElementById("ratingValue");
+
+stars.forEach((star, index) => {
+
+    star.addEventListener("click", () => {
+
+        let rating = index + 1;
+
+        ratingValue.value = rating;
+
+        stars.forEach((s, i) => {
+
+            if (i < rating) {
+                s.classList.remove("bi-star");
+                s.classList.add("bi-star-fill");
+                s.classList.add("active");
+            } else {
+                s.classList.remove("bi-star-fill");
+                s.classList.add("bi-star");
+                s.classList.remove("active");
+            }
+
+        });
+
+    });
+
+});
