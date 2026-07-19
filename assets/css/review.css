@@ -359,9 +359,15 @@ img{
     transition:.2s;
 }
 
-.star-rating i:hover,
-.star-rating i.active{
-    color:#FFC107;
+.rating i {
+    font-size: 35px;
+    color: #3761fb;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.rating i.active {
+    color: #3761fb;
 }
 
 .visit-group{
