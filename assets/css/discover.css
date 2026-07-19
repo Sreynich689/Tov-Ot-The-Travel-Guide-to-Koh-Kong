@@ -225,6 +225,31 @@ body.budget-loading::after{
 }
 
 @media (max-width: 576px) {
+    .quote-section{
+        height: auto;
+        padding: 25px 15px;
+    }
+
+    .quote-section h3{
+        font-size: 22px;
+        line-height: 1.4;
+    }
+
+    .quote-section p{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    /* Title Section */
+    .title-section{
+        height: auto;
+        padding: 25px 15px;
+    }
+
+    .title-section h2{
+        font-size: 28px;
+        line-height: 1.3;
+    }
 
     .discover-hero {
         height: 60vh;
